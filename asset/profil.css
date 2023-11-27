@@ -214,7 +214,7 @@ h1 {
     .timeline-item .date {
         --dateH: 3rem;
         height: var(--dateH);
-        margin-inline: -27px !important; 
+        margin-inline: -30px !important; 
 
         text-align: left !important;
 
