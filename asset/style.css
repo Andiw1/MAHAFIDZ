@@ -708,8 +708,8 @@ color: #878787;
 }
 
 @media (max-width: 767px) {
-  .sr {
-    overflow: hidden;
+  .col-sm {
+    border-right: none; /* Menghilangkan border-right pada mode HP */
   }
 }
 /*==================================================== OTHER END ========================================================*/
