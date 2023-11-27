@@ -229,6 +229,29 @@ body {
   transition: background 0.5s ease;
 }
 
+@media (max-width: 768px) {
+.dark-mode .news-card1-dark {
+  background-color: #4c4c4cff;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .news-card2-dark {
+  background-color: #4c4c4cff;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .news-card3-dark {
+  background-color: #4c4c4cff;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .news-card4-dark {
+  background-color: #4c4c4cff;
+  transition: background 0.5s ease;
+}
+  }
+
+
 .dark-mode .date-news span {
   color: white !important;
 }
