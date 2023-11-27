@@ -724,6 +724,10 @@ color: #878787;
   color: #4d4d4f;
 }
 
+.tc {
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
 #coooool {
     overflow-x: hidden !important;
