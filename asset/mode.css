@@ -304,6 +304,10 @@ body {
 .dark-mode .judul-erp h3 {
   color: white !important;
 }
+
+.dark-mode .modal-content {
+  background-color: #4b4b4b !important;
+}
 /*==================== ERP SYSTEM DARK MODE END ==================*/
 
 /*======================= CLIENT DARK MODE =======================*/
