@@ -198,6 +198,10 @@ body {
 body {
   overflow-x: hidden !important;
 }
+
+#pricelist {
+  overflow-x: hidden !important;
+}
   
   .nm-page {
     margin-top: -30px;
