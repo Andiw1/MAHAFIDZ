@@ -38,6 +38,12 @@
   transition: background-color 0.3s;
 }
 
+@media (max-width: 767px) {
+  .navbar {
+    background-position: center 10%;
+  }
+}
+
 .navbar-toggler-icon {
   color: white;
 }
