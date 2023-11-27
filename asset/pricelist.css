@@ -195,6 +195,10 @@ body {
 }
 
 @media (max-width: 768px) {
+body {
+  overflow-x: hidden !important;
+}
+  
   .nm-page {
     margin-top: -30px;
     margin-left: 15px;
