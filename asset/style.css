@@ -709,7 +709,7 @@ color: #878787;
 
 @media (max-width: 767px) {
   .col-sm {
-    border-right: none; /* Menghilangkan border-right pada mode HP */
+    border-right: none !important;
   }
 }
 /*==================================================== OTHER END ========================================================*/
