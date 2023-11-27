@@ -732,5 +732,10 @@ color: #878787;
   .col-sm {
     border-right: none !important;
   }
+
+  #line-right {
+    box-shadow: none;
+    margin-bottom: 10px;
+  }
 }
 /*==================================================== OTHER END ========================================================*/
