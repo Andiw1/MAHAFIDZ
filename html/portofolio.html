@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Mahafidz</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/logo/idmetafora_logo.jpeg" />
+
+  <!--Link Style CSS-->
+  <link rel="stylesheet" href="../asset/style.css">
+  <link rel="stylesheet" href="../asset/portofolio.css">
+  <link rel="stylesheet" href="../asset/mode.css" />
+
+  <!-- Link AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--Link Via CDN With Boostrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!--Link Via CDN With Boostrap Icons CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!--Link Via CDN Font-->
+  <link href="https://www.dafontfree.net/embed/bnlhbGEtcmVndWxhciZkYXRhLzQ2L24vNjEwODMvbnlhbGEudHRm" rel="stylesheet"
+    type="text/css" />
+
+  <!-- Fancybox CSS via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar bg-transparent sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img id="mahafidz" class="dark-mode-img" src="../img/mahafidz_dark.png" alt="Bootstrap" width="170"
+          height="30" />
+      </a>
+      <div class="clock-container">
+        <div class="clock"></div>
+        <div class="date" id="formattedDate"></div>
+      </div>
+      <span class="button-divider"></span>
+      <button style=" border: none; background: none;" onclick="toggleDarkMode()">
+        <span id="darkModeIcon" class="bi bi-sun-fill animate-icon" style="color: orange; font-size: 20px;"></span>
+      </button>
+      <span class="button-divider"></span>
+      <div class="icon-container">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span>
+            <i class="bi bi-list text-danger" style="font-size: 27px; margin-left: -10px;"></i>
+            <i class="bi bi-box-arrow-right text-danger" style="font-size: 27px; margin-left: -32px;"></i>
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #4a4a4a;">
+          <img id="mahafidz" src="../img/mahafidz.png" alt="Offcanvas Logo" width="185" height="30" />
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="mahafidz" class="offcanvas-body">
+          <ul class="navbar-nav">
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 active fs-4" aria-current="page" href="../index.html"><i
+                  class="bi bi-house-fill me-2"></i>
+                Home</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="profil.html"><i class="bi bi-person-fill me-2"></i> Profil</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+                Portofolio</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                Inspirasi</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                System</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="client.html"><i class="bi bi-people-fill me-2"></i> Client</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!---Tabs-->
+  <div class="tabs bg-transparent" style="margin-top: -5px;">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="button-link2 active" aria-current="page" href="../index.html" style="margin-right: 80px;"><i
+            class="bi bi-house-fill me-2"></i> Home</a>
+      </li>
+      <li class="nav-item" style="margin-right: 60px;">
+        <a class="button-link2 active" href="profil.html"><i class="bi bi-person-fill me-2"></i>
+          Profile</a>
+      </li>
+      <li class="nav-item" style="margin-right: 60px;">
+        <a class="button-link2 active" href="portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+          Portofolio</a>
+      </li>
+      <li class="nav-item" style="margin-right: 60px;">
+        <a class="button-link2 active" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+      </li>
+      <li class="nav-item" style="margin-right: 60px;">
+        <a class="button-link2 active" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+          Inspirasi</a>
+      </li>
+      <li class="nav-item" style="margin-right: 60px;">
+        <a class="button-link2 active" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+      </li>
+      <li class="nav-item" style="margin-right: 60px;">
+        <a class="button-link2 active" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+          System</a>
+      </li>
+      <li class="nav-item">
+        <a class="button-link2 active" href="client.html"><i class="bi bi-people-fill me-2"></i>
+          Client</a>
+      </li>
+    </ul>
+  </div>
+  <!---Tabs End-->
+
+  <!-- Portfolio page -->
+  <section id="portfolio">
+    <div class="our-portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h5 class="fs-1 text-center mt-5"
+              style="font-family: 'MyCustomFont', sans-serif; color: red; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+              <strong>PORTOFOLIO</strong>
+            </h5>
+            <p class="up mb-2" style="font-size: 20PX;"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>PT Elevasi Teknologi Aeronautika Nusantara</h4>
+                <p style="font-size: 15px;"> <strong>
+                    UAV and Aeromodelling Manufacture provides top-quality UAVs and aeromodelling solutions.</strong>
+                </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design.</strong></p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/aeropro.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>PT KIYA SINERGI ASIA</h4>
+                <p style="font-size: 15px;"> <strong>An innovative prefabricated building solution. For more people,
+                    more
+                    houses,
+                    & less money.</strong> </p>
+                <a class="button-link" href="#" data-toggle="modal" data-target="#myModal"
+                  style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Arsifab.com
+                </a>
+                <p class="mt-3"><strong>Use service: Web Development & System Information.</strong>
+                </p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/arsifab.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div> </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>PT Rizki Jaya Semesta</h4>
+                <p style="font-size: 15px;"> <strong>Marketplace for Dropshiper. Find a wide range of products for your
+                    dropshipping business.</strong> </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Web Development & System Information.</strong></p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/bsd.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Photobylocal</h4>
+                <p style="font-size: 15px;"> <strong>Professional Pre Wedding Photographer Specialist based in
+                    Yogyakarta, Indonesia.</strong> </p>
+                <a class="button-link" href="#" data-toggle="modal" data-target="#myModal"
+                  style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Arsifab.com
+                </a>
+                <p class="mt-3"><strong>Use service: Web Development & System Information.</strong>
+                </p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/portfolio_photobylocal.com-yogyakarta-indonesia.jpg" alt=""
+                  style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div> </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>PT Apotek Karunia Group</h4>
+                <p style="font-size: 15px;"> <strong>A distinguished and market-leading pharmacy located in the vibrant
+                    city of Bontang, East Borneo, Indonesia.</strong> </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Metafarma (Pharmacy Information System).</strong></p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/apotek.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content custom-hidden">
+                <h4>Dinas Sosial Provinsi Jawa Tengah, Indonesia</h4>
+                <p style="font-size: 15px;"> <strong>Dinsos Pemprov Jawa Tengah (Social Departement of Central Java) is
+                    a department in charge of organizing social interests for the public to assist the president in the
+                    administration of the state.</strong> </p>
+                <a class="button-link" href="#" data-toggle="modal" data-target="#myModal"
+                  style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Arsifab.com
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design & Web Development.</strong>
+                </p>
+              </div>
+              <div class="showed-content showed-dark custom-showed">
+                <img src="../img/cover/jawa-tengah.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div> </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>Badan Otoritas Pengelola Danau Toba</h4>
+                <p style="font-size: 15px;"> <strong>Lake Toba is the most popular tourist spot in North Sumatra.
+                    Authority Board and Manager of Toba Lake is the official government-owned agency that runs
+                    it.</strong> </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design & Web Development.</strong></p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/wonderful.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>PT Star Software Indonesia</h4>
+                <p style="font-size: 15px;"> <strong>One of Global Company from Switzerland which has a branch in
+                    Indonesia.</strong> </p>
+                <a class="button-link" href="#" data-toggle="modal" data-target="#myModal"
+                  style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Arsifab.com
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design & Development.</strong>
+                </p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/star-indonesia.id.jpg" alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div> </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>SpeeQual Sdn.Bhd Malaysia</h4>
+                <p style="font-size: 15px;"> <strong>One of Language Services Company from Malaysia. Your ideal partner
+                    for localization needs.</strong> </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Web Development & System Information.</strong></p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/website-speequal-com-malaysia-web-developed-by-idmetafora-2.jpg" alt=""
+                  style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Arsatama Architect</h4>
+                <p style="font-size: 15px;"> <strong>
+                    A distinguished architectural firm based in Indonesia, known for innovative design solutions and
+                    creative urban planning.</strong> </p>
+                <a class="button-link" href="#" data-toggle="modal" data-target="#myModal"
+                  style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Arsifab.com
+                </a>
+                <p class="mt-3"><strong>Use service: Web Development.</strong>
+                </p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/website-arsatama-architect-developed-by-idmetafora.jpg" alt=""
+                  style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div> </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>PT Pelabuhan Indonesia III (Persero)</h4>
+                <p style="font-size: 15px;"> <strong>PT Pelabuhan Indonesia III (Persero) also known as Pelindo 3 is a
+                    state-owned enterprise (BUMN) that runs in the port services business as a port operator.</strong>
+                </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design & Web Development.</strong></p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/pembuat-website-pelabuhan-indonesia-3-.jpg" alt=""
+                  style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Baba Rent Car</h4>
+                <p style="font-size: 15px;"> <strong>Babarentcar is one of our clients who do business in the field of
+                    rental of transportation fleet.</strong> </p>
+                <a class="button-link" href="#" data-toggle="modal" data-target="#myModal"
+                  style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Arsifab.com
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design & Web Development.</strong>
+                </p>
+              </div>
+              <div class="showed-content showed-dark">
+                <img src="../img/cover/website-babarencarcom-rental-mobil-bangka-belitung.jpg" alt=""
+                  style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div> </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mb-5">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content custom-hidden">
+                <h4>Restaurant Gudeg Bu Tjitro 1925</h4>
+                <p style="font-size: 15px;"> <strong>Traditional Culture is Greatest Heritage, But if we know how to
+                    keep make it relevance with digital era, we believe your business will always relevance right now
+                    and in future.</strong> </p>
+                <a class="button-link" href="https://inaero.id/" style="position: relative; font-size: 15px;">
+                  <i class="bi bi-link-45deg"></i> Inaero.id
+                </a>
+                <p class="mt-3"><strong>Use service: Web Design, Web Development, Maintenance & Search Enggine
+                    Optimization.</strong></p>
+              </div>
+              <div class="showed-content custom-showed showed-dark">
+                <img
+                  src="../img/cover/website-gudeg-bu-tjitro1925-web-designer-indonesia-yogyakarta-design-by-idmetafora-removebg.jpg"
+                  alt="" style="max-width: 100%; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio page -->
+
+  <!--Footer-->
+  <footer class="footer-section mt-5" data-aos="fade-up">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div class="cta-text" style="width: 80%;">
+                <h4>Find us</h4>
+                <span>Sleman Regency, Special Region of Yogyakarta 55581</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-telephone-fill"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+62 896 6423 0232</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>Email: info at mahafidz.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="../index.html"><img src="../img/mahafidz.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>MAHAFIDZ is an IT Solution Company, our main business is in web
+                  design & development. We also support our clients in digital
+                  marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) © 2014-2023</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Our Social Media</span>
+                <a href="#"> <img src="../img/logo/LinkedIn.png" alt="LinkedIn" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../img/logo/Facebook.png" alt="Facebook" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../img/logo/instagram.png" alt="Instagram" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"> <img src="../img/logo/twitter.png" alt="Twitter" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Website Services</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="#">Website Developement</a></li>
+                  <li><a href="portofolio.html">Portfolio Website Development</a></li>
+                  <li><a href="pricelist.html"> Price List Website Development</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-heading">
+                <h3>Product ERP</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="erpsystem.html">Enterprise Resources Planning</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Group Company</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <img src="../img/logo/logo-metafora-corp.png" alt="metafora-corp" style="max-width: 50%;"> </br>
+                <img src="../img/logo/metafora-land-long-logo-with-description-png.png" alt="metafora-land"
+                  style="max-width: 60%; margin-top: 10px; margin-left: -4px !important;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <p style="margin-top: 20px; text-align: center; color: white;">
+          &copy; Copyright 2014-2023 <a href="#"
+            style="color: white; text-decoration: none;"><strong>MAHAFIDZ</strong></a>
+          All
+          Rights Reversed
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <!--Script JS-->
+  <script src="../js/mode.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/time.js"></script>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Tambahkan Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Fancybox JS via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</body>
+
+<!-- Script AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Script GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+<script>
+  gsap.registerPlugin(TextPlugin);
+  gsap.to(".down", { duration: 2, delay: 0.5, text: "" });
+  gsap.to(".up", {
+    duration: 4,
+    delay: 2,
+    text: "Every project that we do gain our experience. Let's look our portfolio's as references to our work quality.",
+  });
+  gsap.from("#mahafidz", { duration: 1, x: -50, opacity: 0, ease: "back" });
+  gsap.from("#header", { duration: 1, x: -50, opacity: 0, ease: "back" });
+  gsap.from(".button-link2", {
+    duration: 1,
+    x: -50,
+    opacity: 0,
+    ease: "back",
+    stagger: 0.2,
+  });
+</script>
+
+<script>
+  function prevSlide() {
+    $("#popularCarousel").carousel("prev");
+  }
+
+  function nextSlide() {
+    $("#popularCarousel").carousel("next");
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News 7 - Mahafidz</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../img/logo/idmetafora_logo.jpeg" />
+
+  <!--Link Style CSS-->
+  <link rel="stylesheet" href="../asset/style.css" />
+  <link rel="stylesheet" href="../asset/pricelist.css" />
+  <link rel="stylesheet" href="../asset/mode.css" />
+
+  <!-- Link AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--Link Via CDN With Boostrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!--Link Via CDN With Boostrap Icons CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+  <!--Link Via CDN Font-->
+  <link href="https://www.dafontfree.net/embed/bnlhbGEtcmVndWxhciZkYXRhLzQ2L24vNjEwODMvbnlhbGEudHRm" rel="stylesheet"
+    type="text/css" />
+
+  <!--Link Via CDN Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar bg-transparent sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img id="mahafidz" class="dark-mode-img" src="../../img/mahafidz_dark.png" alt="Bootstrap" width="170"
+          height="30" />
+      </a>
+      <div class="clock-container">
+        <div class="clock"></div>
+        <div class="date" id="formattedDate"></div>
+      </div>
+      <span class="button-divider"></span>
+      <button style=" border: none; background: none;" onclick="toggleDarkMode()">
+        <span id="darkModeIcon" class="bi bi-sun-fill animate-icon" style="color: orange; font-size: 20px;"></span>
+      </button>
+      <span class="button-divider"></span>
+      <div class="icon-container">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span>
+            <i class="bi bi-list text-danger" style="font-size: 27px; margin-left: -10px;"></i>
+            <i class="bi bi-box-arrow-right text-danger" style="font-size: 27px; margin-left: -32px;"></i>
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #4a4a4a;">
+          <img id="mahafidz" src="../img/mahafidz.png" alt="Offcanvas Logo" width="185" height="30" />
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="mahafidz" class="offcanvas-body">
+          <ul class="navbar-nav">
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 active fs-4" aria-current="page" href="../index.html"><i
+                  class="bi bi-house-fill me-2"></i>
+                Home</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="profil.html"><i class="bi bi-person-fill me-2"></i> Profil</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+                Portofolio</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                Inspirasi</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                System</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="client.html"><i class="bi bi-people-fill me-2"></i> Client</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+    <!---Tabs-->
+    <div class="tabs bg-transparent" style="margin-top: -5px;">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="button-link2 active" aria-current="page" href="../index.html" style="margin-right: 80px;"><i
+              class="bi bi-house-fill me-2"></i> Home</a>
+        </li>
+        <li class="nav-item" style="margin-right: 60px;">
+          <a class="button-link2 active" href="profil.html"><i class="bi bi-person-fill me-2"></i>
+            Profile</a>
+        </li>
+        <li class="nav-item" style="margin-right: 60px;">
+          <a class="button-link2 active" href="portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+            Portofolio</a>
+        </li>
+        <li class="nav-item" style="margin-right: 60px;">
+          <a class="button-link2 active" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+        </li>
+        <li class="nav-item" style="margin-right: 60px;">
+          <a class="button-link2 active" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+            Inspirasi</a>
+        </li>
+        <li class="nav-item" style="margin-right: 60px;">
+          <a class="button-link2 active" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+        </li>
+        <li class="nav-item" style="margin-right: 60px;">
+          <a class="button-link2 active" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+            System</a>
+        </li>
+        <li class="nav-item">
+          <a class="button-link2 active" href="client.html"><i class="bi bi-people-fill me-2"></i>
+            Client</a>
+        </li>
+      </ul>
+    </div>
+    <!---Tabs End-->
+
+  <!--- Section -->
+  <section id="pricelist" class="mt-5">
+    <div class="col-md-11 mx-auto">
+      <div class="row mt-3 mb-3">
+        <div class="col-md-6">
+          <h5 class="nm-page">
+            <strong>Price List</strong>
+          </h5>
+          <h5 class="nm-page2">
+            <strong>Design Website</strong>
+          </h5>
+        </div>
+        <div class="col-md-6 nm-dec">
+          <img src="../img/logo/white-logo-idmetafora-transparant.png" alt="">
+          <p>List of price list website design services </br> PT Metafora
+            Indonesia Teknologi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-11 mx-auto brdr-btm"></div>
+
+    <!-- Carousel -->
+    <div class="row mt-2">
+      <div class="col-md-11 mx-auto">
+        <div id="news-slider" class="owl-carousel">
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="../img/product/personal.png" alt="">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title" style="text-align: center !important;">
+                <p> PERSONAL PLAN <span class="harga">IDR 8.500 K</span> </p>
+              </h3>
+              <hr style="border: 2px solid #555555; border-radius: 5px; margin: 0px 0;"> </br>
+              <p style="font-size: 20px; font-family: 'Britanic', sans-serif !important;"> Feature </p>
+              <p>
+                <i class="bi bi-check2-circle text-success"></i> Customer Service <span
+                  style="margin-left: 24px;">:</span> <strong>24/7</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Number of Pages <span
+                  style="margin-left: 24px;">:</span> <strong>5</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Number of Revisions : <strong>2X</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Processing Time <span
+                  style="margin-left: 32px;">:</span> <strong>5 Days</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Revision Deadline <span
+                  style="margin-left: 22px;">:</span> <strong>15 days <span class="ml-rd"
+                    style="margin-left: 23px;">after work is
+                    complete</span> </strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="../img/product/online-shop.png" alt="">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title" style="text-align: center !important;">
+                <p> SMALL BUSINESS PLAN <span class="harga">IDR 9.500 K</span></p>
+              </h3>
+              <hr style="border: 2px solid #555555; border-radius: 5px; margin: 0px 0;"> </br>
+              <p style="font-size: 20px; font-family: 'Britanic', sans-serif !important;"> Feature </p>
+              <p>
+                <i class="bi bi-check2-circle text-success"></i> Customer Service <span
+                  style="margin-left: 24px;">:</span> <strong> 24/7</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Number of Pages <span
+                  style="margin-left: 24px;">:</span> <strong> 7</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Number of Revisions : <strong> 3X</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Processing Time <span
+                  style="margin-left: 32px;">:</span> <strong> 5 Days</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Revision Deadline <span
+                  style="margin-left: 22px;">:</span> <strong> 15 days <span class="ml-rd"
+                    style="margin-left: 23px;">after work is
+                    complete</span></strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="../img/product/corporate.png" alt="">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title" style="text-align: center !important;">
+                <p> CORPORATE PLAN <span class="harga">IDR 15.000 K</span> </p>
+              </h3>
+              <hr style="border: 2px solid #555555; border-radius: 5px; margin: 0px 0;"> </br>
+              <p style="font-size: 20px; font-family: 'Britanic', sans-serif !important;"> Feature </p>
+              <p>
+                <i class="bi bi-check2-circle text-success"></i> Customer Service <span
+                  style="margin-left: 24px;">:</span> <strong> 24/7</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Number of Pages <span
+                  style="margin-left: 24px;">:</span> <strong> Up to 15</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Number of Revisions : <strong> Unlimited</strong>
+                </br>
+                <i class="bi bi-check2-circle text-warning"></i> Processing Time <span
+                  style="margin-left: 32px;">:</span> <strong> 3 Days</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Revision Deadline <span
+                  style="margin-left: 22px;">:</span> <strong> 90 days <span class="ml-rd"
+                    style="margin-left: 23px;">after work is
+                    complete</span></strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="../img/product/leader.png" alt="">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title" style="text-align: center !important;">
+                <p> ELITE PLAN <span class="harga">IDR 30.000 K</span> </p>
+              </h3>
+              <hr style="border: 2px solid #555555; border-radius: 5px; margin: 0px 0;"> </br>
+              <p style="font-size: 20px; font-family: 'Britanic', sans-serif !important;"> Feature </p>
+              <p>
+                <i class="bi bi-check2-circle text-success"></i> Customer Service <span
+                  style="margin-left: 24px;">:</span> <strong> 24/7</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Number of Pages <span
+                  style="margin-left: 24px;">:</span> <strong> Up to 30</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Number of Revisions : <strong> Unlimited</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Processing Time <span
+                  style="margin-left: 32px;">:</span> <strong> 2 Days</strong>
+                </br>
+                <i class="bi bi-check2-circle text-success"></i> Revision Deadline <span
+                  style="margin-left: 22px;">:</span> <strong> 365 days <span class="ml-rd"
+                    style="margin-left: 23px;">after work is
+                    complete</span></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="red-box mb-2">
+          <p>
+            We’re confident this partnership will create a ton of value for both of us, so
+            let’s
+            get started. </br>
+            Contact: +62 896 6423 0232.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---Section End-->
+
+  <!--Footer-->
+  <footer class="footer-section mt-4" data-aos="fade-up">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div class="cta-text" style="width: 80%;">
+                <h4>Find us</h4>
+                <span>Sleman Regency, Special Region of Yogyakarta 55581</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-telephone-fill"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+62 896 6423 0232</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>Email: info at mahafidz.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="../../index.html"><img src="../../img/mahafidz.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>MAHAFIDZ is an IT Solution Company, our main business is in web
+                  design & development. We also support our clients in digital
+                  marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) © 2014-2023</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Our Social Media</span>
+                <a href="#"> <img src="../../img/logo/LinkedIn.png" alt="LinkedIn" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/Facebook.png" alt="Facebook" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/instagram.png" alt="Instagram" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/twitter.png" alt="Twitter" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Website Services</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="#">Website Developement</a></li>
+                  <li><a href="../portofolio.html">Portfolio Website Development</a></li>
+                  <li><a href="pricelist.html"> Price List Website Development</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-heading">
+                <h3>Product ERP</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="../erpsystem.html">Enterprise Resources Planning</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Group Company</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <img src="../../img/logo/logo-metafora-corp.png" alt="metafora-corp" style="max-width: 50%;"> </br>
+                <img src="../../img/logo/metafora-land-long-logo-with-description-png.png" alt="metafora-land"
+                  style="max-width: 60%; margin-top: 10px; margin-left: -4px !important;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <p style="margin-top: 20px; text-align: center; color: white;">
+          &copy; Copyright 2014-2023 <a href="../../index.html"
+            style="color: white; text-decoration: none;"><strong>MAHAFIDZ</strong></a>
+          All
+          Rights Reversed
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <style>
+    @keyframes slideAnimation {
+      0% {
+        transform: translateY(-50%) scale(1);
+      }
+
+      50% {
+        transform: translateY(-50%) scale(1.2);
+      }
+
+      100% {
+        transform: translateY(-50%) scale(1);
+      }
+    }
+
+    .owl-carousel .owl-nav button {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      transition: background 0.5s ease 0s;
+      position: absolute;
+      bottom: 100%;
+      transform: translateY(-50%);
+      margin-bottom: 20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: 15px;
+      font-size: 50px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      left: 15px;
+      font-size: 50px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .owl-carousel .owl-nav button.animated {
+      animation: slideAnimation 0.5s ease;
+    }
+  </style>
+
+  <!--Script JS-->
+  <script src="../../js/mode.js"></script>
+  <script src="../../js/navbar.js"></script>
+  <script src="../../js/time.js"></script>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Tambahan Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script Owl Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#news-slider").owlCarousel({
+        items: 4, // Mengubah jumlah items menjadi 4
+        nav: false,
+        dots: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          },
+          1200: {
+            items: 4 // Menambahkan jumlah item untuk lebar layar 1200px atau lebih besar
+          }
+        }
+      });
+      $(".owl-nav button").on("click", function () {
+        $(this).addClass("animated");
+        setTimeout(function () {
+          $(".owl-nav button").removeClass("animated");
+        }, 500);
+      });
+    });
+  </script>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function prevSlide() {
+      $("#popularCarousel").carousel("prev");
+    }
+
+    function nextSlide() {
+      $("#popularCarousel").carousel("next");
+    }
+  </script>
+</body>
+
+</html>

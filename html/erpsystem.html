@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP System - Mahafidz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/logo/idmetafora_logo.jpeg" />
+
+    <!--Link Style CSS-->
+    <link rel="stylesheet" href="../asset/style.css">
+    <link rel="stylesheet" href="../asset/mode.css" />
+
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--Link Via CDN With Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Link Via CDN With Boostrap Icons CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--Link Via CDN Font-->
+    <link href="https://www.dafontfree.net/embed/bnlhbGEtcmVndWxhciZkYXRhLzQ2L24vNjEwODMvbnlhbGEudHRm" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar bg-transparent sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img id="mahafidz" class="dark-mode-img" src="../img/mahafidz_dark.png" alt="Bootstrap" width="170"
+                    height="30" />
+            </a>
+            <div class="clock-container">
+                <div class="clock"></div>
+                <div class="date" id="formattedDate"></div>
+            </div>
+            <button style=" border: none; background: none;" onclick="toggleDarkMode()">
+                <span id="darkModeIcon" class="bi bi-sun-fill animate-icon"
+                    style="color: orange; font-size: 20px;"></span>
+            </button>
+            <span class="button-divider"></span>
+            <div class="icon-container">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span>
+                        <i class="bi bi-list text-danger" style="font-size: 27px; margin-left: -10px;"></i>
+                        <i class="bi bi-box-arrow-right text-danger" style="font-size: 27px; margin-left: -32px;"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style="background-color: #4a4a4a;">
+                    <img id="mahafidz" src="../img/mahafidz.png" alt="Offcanvas Logo" width="185" height="30" />
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div id="mahafidz" class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 active fs-4" aria-current="page" href="../index.html"><i
+                                    class="bi bi-house-fill me-2"></i>
+                                Home</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="profil.html"><i class="bi bi-person-fill me-2"></i>
+                                Profil</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="portofolio.html"><i
+                                    class="bi bi-clipboard-data-fill me-2"></i>
+                                Portofolio</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                                Inspirasi</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                                System</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="client.html"><i class="bi bi-people-fill me-2"></i>
+                                Client</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!---Tabs-->
+    <div class="tabs bg-transparent" style="margin-top: -5px;">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="button-link2 active" aria-current="page" href="../index.html" style="margin-right: 80px;"><i
+                        class="bi bi-house-fill me-2"></i> Home</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="profil.html"><i class="bi bi-person-fill me-2"></i>
+                    Profile</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+                    Portofolio</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                    Inspirasi</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                    System</a>
+            </li>
+            <li class="nav-item">
+                <a class="button-link2 active" href="client.html"><i class="bi bi-people-fill me-2"></i>
+                    Client</a>
+            </li>
+        </ul>
+    </div>
+    <!---Tabs End-->
+
+    <!--Section 2-->
+    <section id="erp">
+        <div class="container" id="coooool" style="background-color: transparent; border-radius: 4px;">
+            <div class="text-center">
+                <h5 class="fs-1 text-center mt-5"
+                    style="font-family: 'MyCustomFont', sans-serif; color: red; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+                    <strong>ERP SYSTEM</strong>
+                </h5>
+                <p class="up mb-5" style="font-size: 20PX;"></p>
+            </div>
+            <div class="row" id="three-step-business">
+                <div data-aos="zoom-in-right" data-aos-duration="250" class="col-sm judul-erp" id="line-right"
+                    style="border-right: solid 1px #dadada;">
+                    <img id="cool-icon"
+                        src="https://mahafidz.com/assets/images/erp/jasa-pembuatan-system-erp-purchasing-indonesia.png"
+                        alt="Konsultan Pembuatan ERP Indonesia">
+                    <h3>Purchasing System</h3>
+                    <p>Tools that help you make a recommendation regarding quantity and price and the best supplier.</p>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-sm judul-erp" id="line-right"
+                    style="border-right: solid 1px #dadada;">
+                    <img id="cool-icon"
+                        src="https://mahafidz.com/assets/images/erp/jasa-pembuatan-system-erp-warehouse-di-indonesia.png"
+                        alt="Konsultan Pembuatan Website Indonesia Dengan Sistem MoU">
+                    <h3>Warehouse Management</h3>
+                    <p>Make you easier to manage so many product and so many locations in one dashboard.</p>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="1500" class="col-sm judul-erp">
+                    <img id="cool-icon"
+                        src="https://mahafidz.com/assets/images/erp/jasa-pembuatan-sistem-toko-di-indonesia-erp-store.png"
+                        alt="Konsultan Pembuatan ERP Indonesia Sistem Maintenance">
+                    <h3>Point of Sales</h3>
+                    <p>When a transaction happens, deliver exceptional retail experiences with POS Retail </p>
+                </div>
+            </div>
+            <!-- second row -->
+            <hr>
+            <div class="row" id="three-step-business">
+                <div data-aos="zoom-in-right" data-aos-duration="250" class="col-sm judul-erp" id="line-right"
+                    style="border-right: solid 1px #dadada;">
+                    <img id="cool-icon"
+                        src="https://mahafidz.com/assets/images/erp/jasa-pembuatan-developer-erp-keuangan-di-indonesia.png"
+                        alt="Konsultan Pembuatan ERP Warehouse Indonesia">
+                    <h3>Finance & Budgeting System</h3>
+                    <p>Tools that help you manage financial budgeting & control budgeting.</p>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-sm judul-erp" id="line-right"
+                    style="border-right: solid 1px #dadada;">
+                    <img id="cool-icon"
+                        src="https://mahafidz.com/assets/images/erp/jasa-pembuatan-erp-akuntansi-di-indonesia.png"
+                        alt="Konsultan Pembuatan Website Indonesia Dengan Sistem MoU">
+                    <h3>Accounting System</h3>
+                    <p>The system provides key insights that help a company's management team make many of their
+                        decisions.
+                    </p>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="1500" class="col-sm judul-erp">
+                    <img id="cool-icon"
+                        src="https://mahafidz.com/assets/images/erp/jasa-pembuatan-bisnis-inteligent-di-indonesia.png"
+                        alt="Konsultan Pembuatan ERP Indonesia Sistem Maintenance">
+                    <h3>Business intelligence</h3>
+                    <p>Help companies make better decisions by showing present and historical data within their business
+                        context.. </p>
+                </div>
+            </div>
+
+            <!-- third row -->
+
+            <hr>
+
+            <div class="row" id="three-step-business">
+                <div data-aos="zoom-in-right" data-aos-duration="250" class="col-sm judul-erp" id="line-right"
+                    style="border-right: solid 1px #dadada;">
+                    <img id="cool-icon" src="https://mahafidz.com/assets/images/erp/tax-system-indonesia.png"
+                        alt="Konsultan Pembuatan ERP Warehouse Indonesia">
+                    <h3>Tax System</h3>
+                    <p>Tools that help you calculate GST, VAT, and other taxes calculation.</p>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-sm judul-erp" id="line-right"
+                    style="border-right: solid 1px #dadada;">
+                    <img id="cool-icon" src="https://mahafidz.com/assets/images/erp/audit-system.png"
+                        alt="Konsultan Pembuatan Website Indonesia Dengan Sistem MoU">
+                    <h3>Audit System</h3>
+                    <p>Detect fraud internally. Helping internal management to controls and manage the company.</p>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="1500" class="col-sm judul-erp">
+                    <img id="cool-icon" src="https://mahafidz.com/assets/images/erp/legal-administration-system.png
+                     " alt="Konsultan Pembuatan ERP Indonesia Sistem Maintenance">
+                    <h3>Legal Administration</h3>
+                    <p>Manage credential data in the company. Make team easier to share data with specific people who
+                        need
+                        to access it. </p>
+                </div>
+            </div>
+    </section>
+    <!--Section End 2-->
+
+    <!--Section 3-->
+    <section id="erp2">
+        <div class="container mt-5" style="background-color: transparent; border-radius: 4px;">
+            <div class="container">
+                <div class="row">
+                    <div id="what-we-do" class="col-md-12 text-center">
+                        <br><br>
+                        <h3 data-aos="zoom-in-right" data-aos-duration="500">What Can You Request?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row" id="three-main-business">
+                    <div class="col-sm" id="line-right">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="tooltip" data-placement="left"
+                            title="Our main service is ERP. We help to make your business process standardized and more effectively.">What
+                            is ERP?</a>
+                        <br>
+                        <a onclick="DAW(); title_DAW();" id="we-do" href="#" data-toggle="modal"
+                            data-target="#Web-Design">
+                            <img id="cool-icon" data-aos="zoom-in-right" data-aos-duration="500"
+                                src="https://mahafidz.com/assets/images/erp/top-the-best-developer-erp-indonesia.png"
+                                alt="Web Designer Yogyakarta">
+                        </a>
+                        <br>
+                        <a class="button-link fs-5" onclick="DAW(); title_DAW();" data-aos="zoom-in-right"
+                            data-aos-duration="500" id="we-do" href="#" data-toggle="modal" data-target="#Web-Design">
+                            Customize Business Flow
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Web-Design" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="title-DAW"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center><img style="width: 70%; clear: both;"
+                                                src="https://mahafidz.com/assets/images/portfolio-website-idmetafora.jpg"
+                                                alt="Jasa Pembuatan Website di Yogyakarta"></center>
+                                        <p id="DAW"></p>
+                                        <div class="footer-quote">
+                                            Every experience make us bolder and know what market needs to every client.
+
+                                            <a class="footer-quote-button" href="https://mahafidz.com/portfolio">Looks
+                                                Our
+                                                Portfolio</a>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        l = 0;
+                                        var title_web_design = ' Design Amazing Website ';
+                                        var speed_wdt = 50;
+                                        function title_DAW() {
+                                            if (l < title_web_design.length) {
+                                                document.getElementById("title-DAW").innerHTML += title_web_design.charAt(l);
+                                                l++;
+                                                setTimeout(title_DAW, speed_wdt);
+                                            }
+                                        }
+                                        k = 0;
+                                        var desc_web_design = ' Amazing web design is about blending creativity, aesthetics, and intuitiveness. Encouraging users to explore and engage with your brand and content. Our creative team gives you an experience of trending design today. Whether you need a responsive website, increase your conversion rate, or want to improve your content management process, we can help to give right solution to Empowering Your Business. ';
+                                        var speed_wd = 20;
+                                        function DAW() {
+                                            if (k < desc_web_design.length) {
+                                                document.getElementById("DAW").innerHTML += desc_web_design.charAt(k);
+                                                k++;
+                                                setTimeout(DAW, speed_wd);
+                                            }
+                                        }
+                                    </script>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm" id="line-right">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="tooltip" data-placement="top"
+                            title="Today, data is the key of progress every business. We can help your company to develop interactive information system.">Aha!</a><br>
+                        <a onclick="DIS(); title_DIS();" href="#" id="we-do" data-toggle="modal"
+                            data-target="#Information-System">
+                            <img id="cool-icon" data-aos="zoom-in-up" data-aos-duration="1000" src="https://mahafidz.com/assets/images/erp/customize-data-format-developer-indonesia-services.png
+                    " alt="Jasa Pembuatan Sistem Inforamasi Rumah Sakit">
+                        </a>
+                        <br>
+                        <a class="button-link fs-5" onclick="DIS(); title_DIS();" data-aos="zoom-in-up"
+                            data-aos-duration="1000" href="#" id="we-do" data-toggle="modal"
+                            data-target="#Information-System">
+                            Customize Data Format
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Information-System" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="title-DIS"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center><img style="width: 70%; clear: both;"
+                                                src="https://mahafidz.com/assets/images/information-system-description.jpg"
+                                                alt="Jasa Pembuatan Sistem Informasi ERP Apotek"></center>
+                                        <p id="DIS"></p>
+                                        <div class="footer-quote">
+                                            Every experience make us bolder and know what market needs to every client.
+                                            <a class="footer-quote-button" href="#">Looks Our Portfolio</a>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        m = 0;
+                                        var title_information_system = ' Develop Information System Web Based  ';
+                                        var speed_dis = 50;
+                                        function title_DIS() {
+                                            if (m < title_information_system.length) {
+                                                document.getElementById("title-DIS").innerHTML += title_information_system.charAt(m);
+                                                m++;
+                                                setTimeout(title_DIS, speed_dis);
+                                            }
+                                        }
+                                        n = 0;
+                                        var desc_information_system = ' Our team helps you reach business goals through agile software development. We believe in efficiency and we hate waste. That’s why minimizing risks of information system development by releasing early and often. So we can maneuver into the good direction. Whenever you have a unique business process that isn’t easily mapped to specific products. Our team has an experience with sophisticated business automation platforms, simple information system until complex information systems. ';
+                                        var speed_isd = 20;
+                                        function DIS() {
+                                            if (n < desc_information_system.length) {
+                                                document.getElementById("DIS").innerHTML += desc_information_system.charAt(n);
+                                                n++;
+                                                setTimeout(DIS, speed_isd);
+                                            }
+                                        }
+                                    </script>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="tooltip" data-placement="right"
+                            title="Help you to integrate your data and automation your business process with combined data from hardware and software! ">Make
+                            a robot!</a><br>
+                        <a onclick="title_BRAND(); BD();" id="we-do" href="#" data-toggle="modal"
+                            data-target="#Branding-Digital">
+                            <img id="cool-icon" data-aos="zoom-in" data-aos-duration="1500"
+                                src="https://mahafidz.com/assets/images/erp/data-integration-jasa-integrasi-data-erp.png"
+                                alt="Web Developer Jakarta Yogyakarta">
+                        </a>
+                        <br>
+                        <a class="button-link fs-5" onclick="title_BRAND(); BD();" data-aos="zoom-in"
+                            data-aos-duration="1500" id="we-do" href="#" data-toggle="modal"
+                            data-target="#Branding-Digital">
+                            Data Integration
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Branding-Digital" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="title-BRANDING"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center><img style="width: 70%; clear: both; "
+                                                src="https://mahafidz.com/img/developer-internet-of-things-indonesia-idmetafora.png"
+                                                alt="Jasa provider sistem Internet of Things"> </center>
+                                        <p id="Desc-BD"></p>
+                                    </div>
+                                    <script>
+                                        s = 0;
+                                        var title_branding = ' Implement smart connectivity to optimize operations, unlock extra efficiency, and gain a competitive edge  ';
+                                        var speed_b = 50;
+                                        function title_BRAND() {
+                                            if (s < title_branding.length) {
+                                                document.getElementById("title-BRANDING").innerHTML += title_branding.charAt(s);
+                                                s++;
+                                                setTimeout(title_BRAND, speed_b);
+                                            }
+                                        }
+                                        t = 0;
+                                        var desc_branding = ' The Internet of Things (IoT) is proving to be a game-changer for organizations. Connected enterprises are enabled to compete against new and nimble competitors, uncover additional revenue opportunities, and reimagine their customer experiences. Leveraging IoT technology, IDMETAFORA as IoT Developer builds custom platforms, business applications and end-to-end vertical solutions. Our proprietary Agile development process provides the fastest road from concept to launch – resulting in high quality, performant web, mobile and IoT infrastructure implementations. ';
+                                        var speed_bd = 20;
+                                        function BD() {
+                                            if (t < desc_branding.length) {
+                                                document.getElementById("Desc-BD").innerHTML += desc_branding.charAt(t);
+                                                t++;
+                                                setTimeout(BD, speed_bd);
+                                            }
+                                        }
+                                    </script>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div id="what-we-do" class="col-md-12 text-center">
+                            <br><br>
+                            <h3 data-aos="zoom-in-right" data-aos-duration="500">How Journey To Work With Us?</h3>
+                        </div>
+                    </div>
+                </div>
+                <style type="text/css">
+
+                </style>
+                <div class="container mt-5" id="coooool">
+                    <div class="row" id="three-step-business">
+                        <div data-aos="zoom-in-right" data-aos-duration="250" class="col-sm judul-erp" id="line-right">
+                            <img id="cool-icon"
+                                src="https://mahafidz.com/assets/images/consultant-web-developer-yogyakarta.png"
+                                alt="Konsultan Pembuatan Website Indonesia">
+                            <h3>Consultation</h3>
+                            <p>Planning and do a briefing with our team to make a custom web like you want with the best
+                                quality
+                                and
+                                worth the price.</p>
+                        </div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-sm judul-erp" id="line-right">
+                            <img id="cool-icon"
+                                src="https://mahafidz.com/assets/images/partnership-sign-mou-web-development-yogyakarta.png"
+                                alt="Konsultan Pembuatan Website Indonesia Dengan Sistem MoU">
+                            <h3>Contract Project</h3>
+                            <p>Making MoU with you and then our team will develop custom project-special like your
+                                request.
+                            </p>
+                        </div>
+                        <div data-aos="zoom-in-left" data-aos-duration="1500" class="col-sm judul-erp">
+                            <img id="cool-icon"
+                                src="https://mahafidz.com/assets/images/maintenance-website-services-yogyakarta.png"
+                                alt="Konsultan Pembuatan Website Indonesia Sistem Maintenance">
+                            <h3>Maintenance Services</h3>
+                            <p>After the project completed we will maintain your web to keep it work and minimalize
+                                error.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section End 3-->
+
+    <!--Footer-->
+    <footer class="footer-section mt-4" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div class="cta-text" style="width: 80%;">
+                                <h4>Find us</h4>
+                                <span>Sleman Regency, Special Region of Yogyakarta 55581</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+62 896 6423 0232</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>Email: info at mahafidz.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="../index.html"><img src="../img/mahafidz.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>MAHAFIDZ is an IT Solution Company, our main business is in web
+                                    design & development. We also support our clients in digital
+                                    marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) © 2014-2023</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Our Social Media</span>
+                                <a href="#"> <img src="../img/logo/LinkedIn.png" alt="LinkedIn" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                                <a href="#"><img src="../img/logo/Facebook.png" alt="Facebook" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                                <a href="#"><img src="../img/logo/instagram.png" alt="Instagram" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                                <a href="#"> <img src="../img/logo/twitter.png" alt="Twitter" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Website Services</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <ul>
+                                    <li><a href="#">Website Developement</a></li>
+                                    <li><a href="portofolio.html">Portfolio Website Development</a></li>
+                                    <li><a href="pricelist.html"> Price List Website Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-heading">
+                                <h3>Product ERP</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <ul>
+                                    <li><a href="erpsystem.html">Enterprise Resources Planning</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Group Company</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <img src="../img/logo/logo-metafora-corp.png" alt="metafora-corp"
+                                    style="max-width: 50%;"> </br>
+                                <img src="../img/logo/metafora-land-long-logo-with-description-png.png"
+                                    alt="metafora-land"
+                                    style="max-width: 60%; margin-top: 10px; margin-left: -4px !important;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <p style="margin-top: 20px; text-align: center; color: white;">
+                    &copy; Copyright 2014-2023 <a href="#"
+                        style="color: white; text-decoration: none;"><strong>MAHAFIDZ</strong></a>
+                    All
+                    Rights Reversed
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Script JS-->
+    <script src="../js/mode.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/time.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Tambahkan Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Script GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to(".down", { duration: 2, delay: 0.5, text: "" });
+        gsap.to(".up", {
+            duration: 4,
+            delay: 2,
+            text: "Enterprise resource planning (ERP) is defined as tools with the ability to deliver an integrated suite of business applications.",
+        });
+        gsap.from("#mahafidz", { duration: 1, x: -50, opacity: 0, ease: "back" });
+        gsap.from("#header", { duration: 1, x: -50, opacity: 0, ease: "back" });
+        gsap.from(".button-link2", {
+            duration: 1,
+            x: -50,
+            opacity: 0,
+            ease: "back",
+            stagger: 0.2,
+        });
+    </script>
+
+    <script>
+        function prevSlide() {
+            $("#popularCarousel").carousel("prev");
+        }
+
+        function nextSlide() {
+            $("#popularCarousel").carousel("next");
+        }
+    </script>
+</body>
+
+</html>

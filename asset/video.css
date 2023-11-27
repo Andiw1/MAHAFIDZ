@@ -1,0 +1,61 @@
+
+  @media (max-width: 767px) {
+    .responsive-container {
+      padding: 0;
+    }
+
+    .responsive-card {
+      max-width: 100%;
+      box-shadow: none;
+    }
+
+    .banner-content {
+      padding: 15px;
+      margin-top: 35px;
+    }
+
+    .banner-content h1 {
+      font-size: 16px;
+    }
+
+    .fs-12 {
+      font-size: 12px;
+    }
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .play-button {
+    position: absolute;
+    top: 38%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.8);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulsate 1.5s infinite;
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+  }

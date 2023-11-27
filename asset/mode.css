@@ -1,0 +1,321 @@
+body {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+@keyframes slideVertical {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-icon {
+  animation: slideVertical 0.5s ease;
+}
+
+.button-divider::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  border-left: 1px solid black;
+  margin: 0 5px;
+  margin-top: 6px;
+}
+
+/*======================== INDEX ==================================*/
+.header1 {
+  margin-top: -10px;
+  font-size: 30px;
+  margin-left: 95px;
+  transition: color 0.3s;
+}
+
+.header2 {
+  margin-top: -20px;
+  font-size: 30px;
+  margin-left: 95px;
+  transition: color 0.3s;
+}
+
+.judul-card {
+  font-family: "MyCustomFont", sans-serif;
+  font-size: 30px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.isi-card {
+  text-align: justify;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+.judul-video {
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s;
+}
+/*======================== INDEX END ==============================*/
+
+/*========================== NEWS =================================*/
+.judul-card-news {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+/*======================== NEWS END ===============================*/
+
+/*================================================================= DARK MODE =============================================================*/
+.dark-mode {
+  background-color: #2b3035;
+  color: white;
+}
+
+/*======================= INDEX DARK MODE =========================*/
+.dark-mode .offcanvas-body {
+  background-color: #2b3035;
+}
+
+.dark-mode .clock-container {
+  color: white;
+}
+
+.dark-mode .dark-mode-img {
+  filter: brightness(0) invert(1) !important;
+}
+
+.dark-mode .button-divider::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  border-left: 1px solid rgb(255, 255, 255);
+  margin: 0 5px;
+  margin-top: 6px;
+}
+
+.dark-mode .button-link2 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode .button-link2:hover {
+  top: -0.16em;
+  transition: padding 0.5s, top 0.35s, box-shadow 0.4s;
+  box-shadow: 0 0.4rem 0 -0.2rem rgb(255, 0, 0);
+}
+
+.dark-mode .header1 .header2 {
+  color: white;
+}
+
+.dark-mode .txt-clr h5 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode .txt-clr p {
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode .judul-card {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .isi-card {
+  color: white;
+}
+
+.dark-mode .carousel-indicators button {
+  background-color: white !important;
+}
+
+.dark-mode .carousel-indicators button.active {
+  background-color: red !important;
+}
+
+.dark-mode .judul-video {
+  color: white;
+}
+
+.dark-mode .owl-dot {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.dark-mode .owl-dot.active {
+  background-color: rgb(255, 0, 0) !important;
+}
+/*================= INDEX DARK MODE END ========================*/
+
+/*=================== PROFIL DARK MODE =========================*/
+.dark-mode .judul-profil span {
+  color: white !important;
+}
+
+.dark-mode .timeline-item {
+  --bgColor: #4b4b4b !important;
+  color: white !important;
+}
+/*================= PROFIL DARK MODE END =======================*/
+
+/*================= PORTOFOLIO DARK MODE =======================*/
+
+.dark-mode .showed-dark {
+  background-color: transparent;
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: 190%;
+  background-position: center;
+}
+
+.dark-mode .our-portfolio .hidden-content {
+  background-color: white;
+  background-image: url(../img/bg/about-bg-light.png);
+  background-position: center;
+  background-size: 200%;
+}
+
+.dark-mode .our-portfolio .hidden-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.dark-mode .our-portfolio .hidden-content p {
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode .button-link {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+/*================= PORTOFOLIO DARK MODE END ===================*/
+
+/*======================= NEWS DARK MODE =======================*/
+
+.dark-mode .news-card-dark {
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: cover;
+  box-shadow: 0 0px 8px 2px rgba(255, 255, 255, 0.1);
+  transition: background 0.9s linear !important;
+}
+
+.dark-mode .news-card1-dark {
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: 110%;
+  background-position: center;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .news-card2-dark {
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: 100%;
+  background-position: center -50px;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .news-card3-dark {
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: 105%;
+  background-position: center -50px;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .news-card4-dark {
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: 125%;
+  background-position: center;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .date-news span {
+  color: white !important;
+}
+
+.dark-mode .date-news1 span {
+  color: #ffffff !important;
+}
+
+.dark-mode .date-news1 a {
+  color: #cbcaca !important;
+}
+.dark-mode .isi-card-news {
+  color: white;
+}
+
+.dark-mode .judul-card-news {
+  color: white;
+}
+
+/*====================== ISI NEWS DARK MODE ======================*/
+.dark-mode .post-slide {
+  box-shadow: 0px 14px 22px -9px #000000;
+}
+
+.dark-mode .author-info a {
+  color: white !important;
+}
+
+.dark-mode .author-info span {
+  color: white !important;
+}
+
+.dark-mode .img-brdr {
+  border-color: red !important;
+}
+
+.dark-mode .link-web {
+  color: red !important;
+  font-weight: 500 !important;
+}
+/*===================== ISI NEWS DARK MODE END ====================*/
+
+/*======================= NEWS DARK MODE END ======================*/
+
+/*===================== INSPIRASI DARK MODE END ===================*/
+.dark-mode .inspirasi-card-dark {
+  background-image: url(../img/bg/about1-bg-dark.png);
+  background-size: 105%;
+  background-position: center -60px;
+  transition: background 0.5s ease;
+}
+
+.dark-mode .date-inspirasi span {
+  color: white !important;
+}
+
+.dark-mode .date-isnpirasi1 span {
+  color: #ffffff !important;
+}
+
+.dark-mode .judul-card-inspirasi {
+  color: white !important;
+}
+/*===================== INSPIRASI DARK MODE END ===================*/
+
+/*========================== VIDEO DARK MODE ======================*/
+.dark-mode .date-video {
+  color: white !important;
+}
+/*====================== VIDEO DARK MODE END ======================*/
+
+/*======================= ERP SYSTEM DARK MODE ====================*/
+.dark-mode .judul-erp h3 {
+  color: white !important;
+}
+/*==================== ERP SYSTEM DARK MODE END ==================*/
+
+/*======================= CLIENT DARK MODE =======================*/
+.dark-mode .client-bg {
+  background-image: url(../img/bg/about-bg-light.png);
+  background-size: cover;
+  background-position: center;
+}
+/*====================== CLIENT DARK MODE END =====================*/
+
+/*======================= CLIENT DARK MODE =======================*/
+.dark-mode .brdr-btm {
+  border-bottom: 8px solid white !important;
+}
+/*====================== CLIENT DARK MODE END =====================*/

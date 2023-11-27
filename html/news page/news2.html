@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News 2 - Mahafidz</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/logo/idmetafora_logo.jpeg" />
+
+  <!--Link Style CSS-->
+  <link rel="stylesheet" href="../../asset/style.css" />
+  <link rel="stylesheet" href="../../asset/news.css" />
+  <link rel="stylesheet" href="../../asset/mode.css" />
+
+  <!-- Link AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--Link Via CDN With Boostrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!--Link Via CDN With Boostrap Icons CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+  <!--Link Via CDN Font-->
+  <link href="https://www.dafontfree.net/embed/bnlhbGEtcmVndWxhciZkYXRhLzQ2L24vNjEwODMvbnlhbGEudHRm" rel="stylesheet"
+    type="text/css" />
+
+  <!--Link Via CDN Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar bg-transparent sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img id="mahafidz" class="dark-mode-img" src="../../img/mahafidz_dark.png" alt="Bootstrap" width="170"
+          height="30" />
+      </a>
+      <div class="clock-container">
+        <div class="clock"></div>
+        <div class="date" id="formattedDate"></div>
+      </div>
+      <span class="button-divider"></span>
+      <button style=" border: none; background: none;" onclick="toggleDarkMode()">
+        <span id="darkModeIcon" class="bi bi-sun-fill animate-icon" style="color: orange; font-size: 20px;"></span>
+      </button>
+      <span class="button-divider"></span>
+      <div class="icon-container">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span>
+            <i class="bi bi-list text-danger" style="font-size: 27px; margin-left: -10px;"></i>
+            <i class="bi bi-box-arrow-right text-danger" style="font-size: 27px; margin-left: -32px;"></i>
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #4a4a4a;">
+          <img id="mahafidz" src="../../img/mahafidz.png" alt="Offcanvas Logo" width="185" height="30" />
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="mahafidz" class="offcanvas-body">
+          <ul class="navbar-nav">
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 active fs-4" aria-current="page" href="../../index.html"><i
+                  class="bi bi-house-fill me-2"></i>
+                Home</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../profil.html"><i class="bi bi-person-fill me-2"></i> Profil</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+                Portofolio</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                Inspirasi</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                System</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../client.html"><i class="bi bi-people-fill me-2"></i> Client</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!---Tabs-->
+  <div class="tabs bg-transparent" style="margin-top: -5px;">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="button-link2 active text-danger" aria-current="page" href="../../index.html"
+          style="margin-right: 80px;"><i class="bi bi-house-fill"></i> Home</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../profil.html"><i class="bi bi-person-fill"></i> Profile</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../portofolio.html"><i class="bi bi-clipboard-data-fill"></i>
+          Portofolio</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../news.html"><i class="bi bi-newspaper"></i> News</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../inspirasi.html"><i class="bi bi-lightbulb-fill"></i>
+          Inspirasi</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../video.html"><i class="bi bi-youtube"></i> Video</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../erpsystem.html"><i class="bi bi-pc-display"></i> ERP
+          System</a>
+      </li>
+      <li class="nav-item">
+        <a class="button-link2 active text-danger" href="../client.html"><i class="bi bi-people-fill"></i> Client</a>
+      </li>
+    </ul>
+  </div>
+  <!---Tabs End-->
+
+  <!--- Section -->
+  <section id="profile">
+    <div class="container" style="background-color: transparent; border-radius: 4px">
+      <div class="row mt-5">
+        <div class="col-md-8 mx-auto">
+          <h5 class="fs-1">
+            <strong>Dari Nol Hingga Sukses: Kisah Inspiratif M Abdurrohman
+              Alhafidz, Pengusaha Muda Bisnis Software yang Menginspirasi Anak
+              Muda untuk Berani Bermimpi dan Berjuang</strong>
+          </h5>
+          <div class="d-flex align-items-center">
+            <img src="../../img/profil/m-abdurrohman-alhafidz 1c.jpg" alt="M_Abdurrohman_Alhafidz"
+              class="shadow rounded-circle mt-2 me-2" style="max-width: 37px" />
+            <div class="author-info">
+              <a href="profil.html" style="text-decoration: none; color: grey; font-weight: bold">Admin</a>
+              <span class="ms-2" style="font-size: 12px; color: grey">09 NOVEMBER 2023</span>
+            </div>
+            <div class="ms-4">
+              <a href="https://www.facebook.com" style="text-decoration: none">
+                <img src="../../img/logo/Facebook.png" alt="Gambar 1" class="fluid-custom"
+                  style="max-width: 20px; margin-right: 5px" />
+              </a>
+              <a href="https://www.twitter.com" style="text-decoration: none">
+                <img src="../../img/logo/twitter.png" alt="Gambar 2" class="fluid-custom"
+                  style="max-width: 20px; margin-right: 5px" />
+              </a>
+              <a href="https://www.instagram.com" style="text-decoration: none">
+                <img src="../../img/logo/instagram.png" alt="Gambar 3" class="fluid-custom"
+                  style="max-width: 20px; margin-right: 5px" />
+              </a>
+              <a href="https://www.linkedin.com" style="text-decoration: none">
+                <img src="../../img/logo/LinkedIn.png" alt="Gambar 4" class="fluid-custom" style="max-width: 20px" />
+              </a>
+            </div>
+          </div>
+
+          <img src="../../img/profil/m-abdurrohman-alhafidz 4ar.png" alt="M_Abdurrohman_Alhafidz" class="mt-4 img-brdr" style="
+          max-width: 100%; border: 2px solid #adadad;" />
+          <p class="mt-2" style="text-align: justify">
+            Pengusaha muda seringkali menjadi sumber inspirasi bagi banyak
+            anak muda yang memiliki impian untuk meraih kesuksesan di bidang
+            bisnis. Keberhasilan mereka dalam membangun bisnis dari awal,
+            mengatasi rintangan dan kegagalan, inovatif dan kreatif,
+            memperjuangkan impian mereka, memberikan dampak positif pada
+            masyarakat, memiliki semangat kewirausahaan yang tinggi,
+            memanfaatkan teknologi dengan baik, memiliki jaringan yang kuat,
+            dan menjalankan bisnis mereka dengan integritas dapat menjadi
+            motivasi dan inspirasi bagi anak muda untuk mengejar impian mereka
+            dan membangun bisnis yang sukses di masa depan.
+          </p>
+
+          <p style="text-align: justify">
+            Seperti cerita salah satu pengusaha muda yang berasal dari
+            kecamatan Lalan, suatu desa kecil terpencil di kabupaten Musi
+            Banyuasin, Sumatera Selatan. Kecamatan yang mana untuk ke daerah
+            tersebut mesti ditempuh dengan perjalanan selama 12 jam dari kota
+            Palembang, dan menempuh 90 kilometer jalan tanah melewati hutan
+            dan area perkebunan. Jika jalan tersebut rusak, maka perjalanan
+            akan menjadi lebih panjang. Bahkan di masa kecilnya, wilayah
+            tersebut yang masih masuk ke kecamatan Bayung Lencir (sebelum
+            menjadi kecamatan Lalan), tidak ada fasilitas listrik PLN dan
+            PDAM. Masih sangat tradisional, namun hal tersebut tidak
+            menghentikan niat pengusaha ini untuk belajar komputer dari sumber
+            manapun yang bisa diakses, baik dari buku, dari guru, maupun dari
+            internet saat sedang berkunjung ke kota Palembang saat itu.
+          </p>
+
+          <p style="text-align: justify">
+            Ialah M Abdurrohman Alhafidz, salah satu pengusaha muda yang
+            sukses di Indonesia. Ia adalah pendiri dari perusahaan jasa
+            pembuatan software
+            <strong><a href="https://erporio.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                ERP (Enterprise Resource Planning)</a></strong>. bernama
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA (PT Metafora Indonesia Teknologi)</a></strong>
+            Pengusaha muda yang memulai bisnis di Yogyakarta ini mulai belajar
+            bahasa pemrograman pada tahun 2009 di usia 14 tahun. Hafidz saat
+            itu masih duduk di bangku SMK dan terbiasa belajar membangun
+            sistem dan aplikasi. Hafidz yang dibekali keterampilan dan
+            kemampuan membuat aplikasi dan website, saat itu telah menjuarai
+            beberapa lomba pembuatan website dan aplikasi tingkat provinsi
+            untuk mewakili Provinsi Sumsel dan berkompetisi antar siswa SMK di
+            tingkat nasional yang dikenal dengan LKS SMK (Lomba Kompetensi
+            Siswa).
+          </p>
+
+          <p style="text-align: justify">
+            Dan semasa kuliah, Muhammad Abdurrohman Alhafidz mendirikan
+            perusahaannya
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a> </strong>pada tahun 2014. Hafidz bukan hanya seorang programmer tapi juga
+            seorang team leader. Bagi Hafidz, modal utama menjalankan bisnis
+            bukanlah uang. Tapi etika dan tanggung jawab yang baik.
+          </p>
+
+          <p style="text-align: justify">
+            Rasa optimis inilah yang mengantarkan M Abdurrohman Alhafidz
+            menekuni profesi yang telah dirintisnya sejak kuliah. Menurutnya,
+            memulai bisnis tidak harus menunggu lulus dan kuliah. Kini kerja
+            kerasnya membuahkan hasil. Di usia muda ia menjadi CEO IDMETAFORA.
+          </p>
+
+          <p style="text-align: justify">
+            Dengan modal awal yang minim 89.000 dari uang saku harian yang ia
+            kumpulkan selama menempuh pendidikan di Yogyakarta. Ia tetap
+            berani mengambil resiko dan memulai usaha. Dalam mendirikan
+            perusahaannya, Hafidz menggunakan pengalaman dan keahliannya di
+            bidang teknologi informasi, serta membangun jaringan dan mencari
+            peluang pemasaran. M. Abdurrohman Alhafidz merupakan lulusan Ilmu
+            Komputer dari Universitas Mercu Buana Yogyakarta pada tahun 2017.
+          </p>
+
+          <p style="text-align: justify">
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong>
+            merupakan konsultan layanan teknologi Indonesia yang berfokus pada
+            pengembangan
+            <strong><a href="https://erporio.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                ERP (Enterprise Resource Planning)</a></strong>. ERP adalah sistem perangkat lunak terintegrasi yang
+            digunakan
+            oleh perusahaan untuk mengelola dan mengotomatisasi proses bisnis
+            dan operasional mereka. ERP terdiri dari beberapa modul seperti
+            manajemen keuangan, manajemen sumber daya manusia, manajemen
+            rantai pasokan, manajemen persediaan, manajemen produksi, dan
+            modul lainnya, yang semuanya diintegrasikan ke dalam satu sistem
+            yang terpusat. ERP membantu perusahaan dalam memperbaiki
+            efisiensi, mengurangi biaya, meningkatkan pengambilan keputusan,
+            dan mengoptimalkan kinerja perusahaan secara keseluruhan.
+          </p>
+
+          <p style="text-align: justify">
+            Jika perusahaan ingin memperbesar skala bisnisnya, perusahaan
+            harus mulai menetapkan standar operasional yang ketat dan tetap
+            terkontrol maka dari itu perusahaan akan sangat membutuhkan solusi
+            ERP
+          </p>
+
+          <p style="text-align: justify">
+            Dengan menghubungkan data dari departemen dalam perusahaan
+            menjadikan kunci untuk meningkatkan potensi yang terbaik di
+            masing-masing departemen perusahaan.
+          </p>
+
+          <p style="text-align: justify">
+            Bagi perusahaan terbaik untuk menggunakan ERP pada saat perusahaan
+            sudah mempunyai visi untuk menjadi besar dan memperbesar skala
+            bisnisnya dengan jumlah karyawan sudah lebih dari 10 orang harus
+            memulai untuk tahap mengimplementasikan modul ERP.
+          </p>
+
+          <p style="text-align: justify">
+            Implementasi ERP di satu perusahaan adalah proses penerapan solusi
+            <strong><a href="https://erporio.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                ERP (Enterprise Resource Planning)</a></strong>
+            dalam operasi bisnis perusahaan. Proses ini melibatkan penggunaan
+            perangkat lunak ERP untuk mengintegrasikan berbagai fungsi bisnis,
+            seperti keuangan, persediaan, produksi, penjualan, dan pemasaran
+            menjadi satu sistem yang terintegrasi dan terpusat. Implementasi
+            ERP bertujuan untuk meningkatkan efisiensi operasional,
+            mengoptimalkan manajemen bisnis, serta meningkatkan kualitas dan
+            akurasi data yang digunakan dalam pengambilan keputusan. Namun,
+            implementasi ERP juga memerlukan komitmen yang kuat dari manajemen
+            perusahaan dan dukungan yang memadai dari tim implementasi untuk
+            memastikan keberhasilan implementasi serta mencapai manfaat yang
+            diharapkan.
+          </p>
+
+          <p style="text-align: justify">
+            Selain menyediakan solusi ERP yang terintegrasi dan dapat
+            disesuaikan sesuai kebutuhan bisnis pelanggan.
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong>
+            juga fokus pada pengembangan teknologi informasi terbaru dan
+            solusi berbasis cloud dan mobile, untuk memenuhi kebutuhan
+            pelanggan yang semakin beragam.
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong>
+            juga memberikan dukungan teknis dan layanan purna jual kepada
+            pelanggan, untuk memastikan bahwa sistem ERP mereka tetap berjalan
+            dengan baik.
+          </p>
+
+          <p style="text-align: justify">
+            Berikut beberapa sistem yang dapat membantu perusahaan atau
+            organisasi dalam mengatur proses bisnisnya agar menjadi satu
+            kesatuan yang terintegrasi :
+          <ol>
+            <li>Finance & Budgeting System</li>
+            <li>Purchasing System</li>
+            <li>Warehouse Management</li>
+            <li>Point Of Sales</li>
+            <li>Accounting System</li>
+            <li>Business Intelligence</li>
+            <li>Tax System</li>
+            <li>Audit System</li>
+            <li>Legal Administration</li>
+            <li>Marketplace Omnichannel</li>
+            <li>Office Operation Management</li>
+            <li>Customer Relationship Management</li>
+          </ol>
+          </p>
+
+          <p style="text-align: justify">
+            Dengan berjalannya waktu yang semakin terus berkembang, <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> berhasil membangun reputasi sebagai perusahaan yang handal dalam bidang solusi jasa ERP. Berkat
+            pengalaman dan keterampilannya di bidang teknologi informasi, <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> mampu memberikan solusi ERP yang tepat dan inovatif bagi pelanggannya. Perusahaan ini juga fokus
+            pada pengembangan produk dan layanan yang berkualitas, sehingga bisa memenuhi kebutuhan pelanggan dan
+            memperkuat posisinya di pasar.
+          </p>
+
+          <p style="text-align: justify">
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> berhasil melayani ratusan proyek pembuatan jasa ERP baik di Indonesia maupun mancanegara. Sebagai
+            perusahaan yang handal dalam bidang solusi jasa ERP, <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> telah melayani banyak klien di Indonesia, termasuk beberapa BUMN (Badan Usaha Milik Negara) dan
+            BUMD (Badan Usaha Milik Daerah).
+          </p>
+
+          <p style="text-align: justify">
+            Beberapa klien IDMETAFORA antara lain :
+          <ol>
+            <li>PT Madusari Murni Indah Tbk</li>
+            <li>PT Pertamina (Persero)</li>
+            <li>PT Pelabuhan Indonesia III (Persero)</li>
+            <li>PT Star Software Indonesia</li>
+            <li>PT Rizki Jaya Semesta</li>
+            <li>PT Kiya Sinergi Asia</li>
+            <li>PT Albasia Batang Sejahtera</li>
+            <li>PT Migas Mandiri Pratama (MMP Kaltim)</li>
+            <li>PT Elevasi Teknologi Aeronautika Nusantara</li>
+            <li>PT Chandra Asri Petrochemical Tbk</li>
+            <li>PT Piranha Multi Talenta</li>
+            <li>PT. Bhinneka Citra Prima</li>
+            <li>Dinas Sosial Provinsi Jawa Tengah, Indonesia</li>
+            <li>Badan Otoritas Pengelola Danau Toba</li>
+            <li>Arsatama Architect</li>
+            <li>Baba Rent Car</li>
+            <li>Restaurant Gudeg Bu Tjitro 1925</li>
+            <li>SpeeQual Sdn.Bhd Malaysia</li>
+            <li>Apotek Karunia Group</li>
+            <li>Photobylocal.com</li>
+          </ol>
+
+          </p>
+
+          <p style="text-align: justify">
+            Selain itu, <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> juga melayani klien dari berbagai sektor industri, seperti perbankan, manufaktur, logistik,
+            pemerintahan, dan lain sebagainya. Dengan pengalaman dan kompetensi yang dimiliki, <strong><a
+                href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> terus berupaya memberikan solusi terbaik dan layanan terbaik bagi pelanggan, termasuk dalam
+            memenuhi kebutuhan khusus dari sektor industri tertentu.
+          </p>
+
+          <p style="text-align: justify">
+            Dalam melayani klien dari berbagai sektor industri, <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> juga harus memahami tantangan dan peluang yang ada di masing-masing sektor industri tersebut.
+            Dalam rangka memenuhi kebutuhan khusus dari sektor industri tertentu, <strong><a
+                href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> perlu berkolaborasi dengan para ahli dan praktisi di sektor industri tersebut. Dengan begitu,
+            <strong><a href="https://idmetafora.com/" class="link-web" style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> dapat memberikan solusi ERP yang tepat dan relevan bagi klien dari sektor industri tertentu.
+          </p>
+
+          <p style="text-align: justify">
+            Melayani klien dari berbagai sektor industri juga membantu <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong> untuk memperluas pengetahuan dan pengalaman bisnisnya. Dalam jangka panjang, hal ini akan membantu
+            IDMETAFORA untuk memperkuat posisinya sebagai penyedia solusi jasa ERP terkemuka di Indonesia.
+          </p>
+
+          <p style="text-align: justify">
+            Kesuksesan <strong><a href="https://idmetafora.com/" class="link-web"
+                style="text-decoration: none; color: blue; font-style: italic">
+                IDMETAFORA.</a>
+            </strong>telah membawa M Abdurrohman Alhafidz menjadi salah satu pengusaha muda yang diakui di Indonesia. Ia
+            seringkali diundang untuk memberikan presentasi dan seminar tentang teknologi informasi dan ERP di berbagai
+            acara bisnis dan teknologi.
+          </p>
+
+          <p style="text-align: justify">
+            Kisah sukses M Abdurrohman Alhafidz dapat menjadi inspirasi bagi anak muda yang memiliki impian untuk
+            membangun bisnis di bidang teknologi informasi dan membantu perusahaan dalam mengelola sumber daya dan
+            meningkatkan produktivitas. Dengan fokus pada inovasi dan kepuasan pelanggan, M Abdurrohman Alhafidz
+            membuktikan bahwa bisnis teknologi informasi dapat menjadi sukses dan memberikan manfaat yang besar bagi
+            masyarakat.
+          </p>
+        </div>
+
+        <!-- Carousel -->
+        <div class="row mt-5">
+          <div class="col-md-8 mx-auto">
+            <div class="related-post">
+              <h4>Related Post</h4>
+              <div class="hr-line"></div>
+            </div>
+            <div id="news-slider" class="owl-carousel">
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="../../img/profil/m-abdurrohman-alhafidz 5ab.png" alt="">
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="news1.html">Kesuksesan Bisnis M. Abdurrohman: Memulai ERP Sejak Usia Muda</a>
+                  </h3>
+                  <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                      style="color: #979797; font-size: 14px;">Apr 26, 2023 </span> <span
+                      style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a href="news1.html"
+                      style="text-decoration: none; color: #828282; font-size: 14px;">
+                      ARSIP</a>
+                </div>
+              </div>
+
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="../../img/profil/m-abdurrohman-alhafidz 1acqb.jpg" alt="">
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="news7.html">Perintis IDMETAFORA: Kreativitas Anak Muda dalam Aplikasi Bisnis</a>
+                  </h3>
+                  <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                      style="color: #979797; font-size: 14px;">Nov 8, 2023 </span> <span
+                      style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a href="news7.html"
+                      style="text-decoration: none; color: #febb4b; font-size: 14px;">
+                      BARU</a>
+                </div>
+              </div>
+
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="../../img/profil/m-abdurrohman-alhafidz 1ab.png" alt="">
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="news6.html">Abdurrohman Alhafidz Bangun Aplikasi Bisnis IDMETAFORA</a>
+                  </h3>
+                  <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                      style="color: #979797; font-size: 14px;">Nov 8, 2023 </span> <span
+                      style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a href="news6.html"
+                      style="text-decoration: none; color: #febb4b; font-size: 14px;">
+                      BARU</a>
+                </div>
+              </div>
+
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="../../img/profil/m-abdurrohman-alhafidz 3ab.png" alt="">
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="news5.html">IDMETAFORA: Kisah Kreativitas Anak Muda, Bisnis Terintegrasi</a>
+                  </h3>
+                  <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                      style="color: #979797; font-size: 14px;">Nov 7, 2023 </span> <span
+                      style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a href="news5.html"
+                      style="text-decoration: none; color: #febb4b; font-size: 14px;">
+                      BARU</a>
+                </div>
+              </div>
+
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="../../img/profil/m-abdurrohman-alhafidz 9ab.jpeg" alt="">
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="news4.html">Bangun Potensi Bisnis bersama M. Abdurrahman di Carnaval IMWORK</a>
+                  </h3>
+                  <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                      style="color: #979797; font-size: 14px;">Okt 18, 2023 </span> <span
+                      style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a
+                      href="news page/news7.html" style="text-decoration: none; color: #febb4b; font-size: 14px;">
+                      BARU</a>
+                </div>
+              </div>
+
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="../../img/profil/m-abdurrohman-alhafidz 10b.jpg" alt="">
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="news3.html">CEO IDMETAFORA, M Abdurrohman Alhafidz Berbagi Tips Karir</a>
+                  </h3>
+                  <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                      style="color: #979797; font-size: 14px;">Okt 12, 2023 </span> <span
+                      style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a href="news3.html"
+                      style="text-decoration: none; color: #febb4b; font-size: 14px;">
+                      BARU</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CArousel END-->
+
+      </div>
+    </div>
+  </section>
+  <!---Section End-->
+
+  <!--Footer-->
+  <footer class="footer-section mt-4" data-aos="fade-up">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div class="cta-text" style="width: 80%;">
+                <h4>Find us</h4>
+                <span>Sleman Regency, Special Region of Yogyakarta 55581</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-telephone-fill"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+62 896 6423 0232</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>Email: info at mahafidz.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="../../index.html"><img src="../../img/mahafidz.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>MAHAFIDZ is an IT Solution Company, our main business is in web
+                  design & development. We also support our clients in digital
+                  marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) © 2014-2023</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Our Social Media</span>
+                <a href="#"> <img src="../../img/logo/LinkedIn.png" alt="LinkedIn" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/Facebook.png" alt="Facebook" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/instagram.png" alt="Instagram" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/twitter.png" alt="Twitter" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Website Services</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="#">Website Developement</a></li>
+                  <li><a href="../portofolio.html">Portfolio Website Development</a></li>
+                  <li><a href="../pricelist.html"> Price List Website Development</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-heading">
+                <h3>Product ERP</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="../erpsystem.html">Enterprise Resources Planning</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Group Company</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <img src="../../img/logo/logo-metafora-corp.png" alt="metafora-corp" style="max-width: 50%;"> </br>
+                <img src="../../img/logo/metafora-land-long-logo-with-description-png.png" alt="metafora-land"
+                  style="max-width: 60%; margin-top: 10px; margin-left: -4px !important;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <p style="margin-top: 20px; text-align: center; color: white;">
+          &copy; Copyright 2014-2023 <a href="../../index.html"
+            style="color: white; text-decoration: none;"><strong>MAHAFIDZ</strong></a>
+          All
+          Rights Reversed
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <style>
+    @keyframes slideAnimation {
+      0% {
+        transform: translateY(-50%) scale(1);
+      }
+
+      50% {
+        transform: translateY(-50%) scale(1.2);
+      }
+
+      100% {
+        transform: translateY(-50%) scale(1);
+      }
+    }
+
+    .owl-carousel .owl-nav button {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      transition: background 0.5s ease 0s;
+      position: absolute;
+      bottom: 100%;
+      transform: translateY(-50%);
+      margin-bottom: 20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: 15px;
+      font-size: 50px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      left: 15px;
+      font-size: 50px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .owl-carousel .owl-nav button.animated {
+      animation: slideAnimation 0.5s ease;
+    }
+  </style>
+
+  <!--Script JS-->
+  <script src="../../js/mode.js"></script>
+  <script src="../../js/navbar.js"></script>
+  <script src="../../js/time.js"></script>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Tambahkan Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script Owl Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#news-slider").owlCarousel({
+        items: 3,
+        nav: true,
+        dots: true,
+        loop: true, // Tambahkan ini
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          }
+        }
+      });
+      $(".owl-nav button").on("click", function () {
+        $(this).addClass("animated");
+        setTimeout(function () {
+          $(".owl-nav button").removeClass("animated");
+        }, 500);
+      });
+    });
+  </script>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function prevSlide() {
+      $("#popularCarousel").carousel("prev");
+    }
+
+    function nextSlide() {
+      $("#popularCarousel").carousel("next");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Mahafidz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/logo/idmetafora_logo.jpeg" />
+
+    <!--Link Style CSS-->
+    <link rel="stylesheet" href="../asset/style.css">
+    <link rel="stylesheet" href="../asset/news.css">
+    <link rel="stylesheet" href="../asset/mode.css" />
+
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--Link Via CDN With Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!--Link Via CDN With Boostrap Icons CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!--Link Via CDN Font-->
+    <link href="https://www.dafontfree.net/embed/bnlhbGEtcmVndWxhciZkYXRhLzQ2L24vNjEwODMvbnlhbGEudHRm" rel="stylesheet"
+        type="text/css" />
+
+</head>
+
+<body>
+    <nav class="navbar bg-transparent sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img id="mahafidz" class="dark-mode-img" src="../img/mahafidz_dark.png" alt="Bootstrap" width="170"
+                    height="30" />
+            </a>
+            <div class="clock-container">
+                <div class="clock"></div>
+                <div class="date" id="formattedDate"></div>
+            </div>
+            <span class="button-divider"></span>
+            <button style=" border: none; background: none;" onclick="toggleDarkMode()">
+                <span id="darkModeIcon" class="bi bi-sun-fill animate-icon"
+                    style="color: orange; font-size: 20px;"></span>
+            </button>
+            <span class="button-divider"></span>
+            <div class="icon-container">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span>
+                        <i class="bi bi-list text-danger" style="font-size: 27px; margin-left: -10px;"></i>
+                        <i class="bi bi-box-arrow-right text-danger" style="font-size: 27px; margin-left: -32px;"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style="background-color: #4a4a4a;">
+                    <img id="mahafidz" src="../img/mahafidz.png" alt="Offcanvas Logo" width="185" height="30" />
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div id="mahafidz" class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 active fs-4" aria-current="page" href="../index.html"><i
+                                    class="bi bi-house-fill me-2"></i>
+                                Home</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="profil.html"><i class="bi bi-person-fill me-2"></i>
+                                Profil</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="portofolio.html"><i
+                                    class="bi bi-clipboard-data-fill me-2"></i>
+                                Portofolio</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                                Inspirasi</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                                System</a>
+                        </li>
+                        <br />
+                        <li class="nav-item1">
+                            <a class="button-link2 fs-4" href="client.html"><i class="bi bi-people-fill me-2"></i>
+                                Client</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!---Tabs-->
+    <div class="tabs bg-transparent" style="margin-top: -5px;">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="button-link2 active" aria-current="page" href="../index.html" style="margin-right: 80px;"><i
+                        class="bi bi-house-fill me-2"></i> Home</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="profil.html"><i class="bi bi-person-fill me-2"></i>
+                    Profile</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+                    Portofolio</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                    Inspirasi</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+            </li>
+            <li class="nav-item" style="margin-right: 60px;">
+                <a class="button-link2 active" href="erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                    System</a>
+            </li>
+            <li class="nav-item">
+                <a class="button-link2 active" href="client.html"><i class="bi bi-people-fill me-2"></i>
+                    Client</a>
+            </li>
+        </ul>
+    </div>
+    <!---Tabs End-->
+
+    <!---Berita-->
+    <section id="berita">
+        <h5 class="fs-1 text-center mt-5 mb-5"
+            style="font-family: 'MyCustomFont', sans-serif; color: red; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+            <strong>NEWS</strong>
+        </h5>
+
+        <div class="container col-md-12 d-flex justify-content-center align-items-center">
+            <div class="card card5 border-0 news-card-dark"
+                style="padding: 15px; max-width: 930px; box-shadow: 0 0px 8px 2px rgba(0, 0, 0, 0.1);">
+                <div class="">
+                    <div class="position-relative">
+                        <img src="../img/profil/m-abdurrohman-alhafidz 1acq.jpg" alt="banner" class="custom-img" />
+                        <div class="banner-content" style="max-width: 100%; margin-top: 30px;">
+                            <a class="button-link4 mb-2" href="news page/news7.html">
+                                Lihat Berita <i class="bi bi-arrow-right-circle-fill"></i>
+                            </a>
+                            <a href="news page/news7.html" style="text-decoration: none; color: white;">
+                                <h1 class="mb-2">
+                                    M Abdurrohman Alhafidz, Perintis IDMETAFORA: Aplikasi Bisnis
+                                    Terintegrasi Dari Kreativitas Anak Muda
+                                </h1>
+                            </a>
+                            <div class="fs-12">
+                                <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                                        style="color: #ffffff;">Nov 8, 2023 </span> <span
+                                        style="margin-left: 5px; margin-right: 5px; color: #ffffff;"> &#124; </span><a
+                                        href="news page/news7.html" style="text-decoration: none; color: #febb4b;">
+                                        BARU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card card5 border-0 shadow news-card1-dark">
+                        <div class="card-title ms-4 mt-3">
+                            <h6 class="date-news" style="font-size: 13px; font-family: 'PlusJakarta', sans-serif;">
+                                <span style="color: #979797;">Nov 8,
+                                    2023 </span> <span style="margin-left: 5px; margin-right: 5px; color: #979797;">
+                                    &#124; </span><a href="news page/news6.html"
+                                    style="text-decoration: none; color: #febb4b;"> BARU</a>
+                            </h6>
+                            <a href="news page/news6.html" class="judul-card-news">
+                                <h5> Kisah Abdurrohman Alhafidz Bangun Aplikasi Bisnis IDMETAFORA</h5>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body card-img-news border-0">
+                                    <img src="../img/profil/m-abdurrohman-alhafidz 1a.png" class="card-img-top"
+                                        alt="Gambar 2" style="width: 150px; height: 100px; border-radius: 5px;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="card-body border-0 isi-card-news"
+                                    style="font-size: 14px; border: 1px solid white;">
+                                    Aplikasi bisnis menjadi salah satu hal penting dalam menunjang bisnis di tengah
+                                    berkembangnya teknologi informasi digital. Aplikasi ini bisa membantu para pengusaha
+                                    ...
+                                    <a class="button-link6 active text-danger" style="font-size: 15px;"
+                                        href="news page/news6.html">
+                                        Lihat
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card card5 border-0 shadow news-card2-dark">
+                        <div class="card-title ms-4 mt-3">
+                            <h6 class="date-news" style="font-size: 13px; font-family: 'PlusJakarta', sans-serif;">
+                                <span style="color: #979797;">Nov 7,
+                                    2023 </span> <span style="margin-left: 5px; margin-right: 5px; color: #979797;">
+                                    &#124; </span><a href="news page/news5.html"
+                                    style="text-decoration: none; color: #febb4b;"> BARU</a>
+                            </h6>
+                            <a href="news page/news5.html" class="judul-card-news">
+                                <h5>Kisah Perintis IDMETAFORA, Kreativitas Anak Muda Jadi Bisnis Aplikasi Bisnis
+                                    Terintegrasi
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body card-img-news border-0">
+                                    <img src="../img/profil/m-abdurrohman-alhafidz 3ap.png" class="card-img-top"
+                                        alt="Gambar 2" style="width: 150px; height: 100px; border-radius: 5px;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="card-body border-0 isi-card-news"
+                                    style="font-size: 14px; border: 1px solid white;">
+                                    M. Abdurrohman Alhafidz, CEO PT Metafora Indonesia Teknologi (IDMETAFORA), menjadi
+                                    perwujudan dari perjuangan dan kreativitas anak muda yang berani mengambil ...
+                                    <a class="button-link6 active text-danger" style="font-size: 15px;"
+                                        href="news page/news5.html">
+                                        Lihat
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card card5 border-0 shadow news-card4-dark">
+                        <div class="card-title ms-4 mt-3">
+                            <h6 class="date-news" style="font-size: 13px; font-family: 'PlusJakarta', sans-serif;">
+                                <span style="color: #979797;">Okt 18,
+                                    2023 </span> <span style="margin-left: 5px; margin-right: 5px; color: #979797;">
+                                    &#124; </span><a href="news page/news4.html"
+                                    style="text-decoration: none; color: #febb4b;"> BARU</a>
+                            </h6>
+                            <a href="news page/news4.html" class="judul-card-news">
+                                <h5>Bangun Potensi Masa Depan Bisnis bersama M. Abdurrahman Alhafidz pada Carnaval
+                                    IMWORK 2023
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body card-img-news border-0">
+                                    <img src="../img/profil/m-abdurrohman-alhafidz 9ac1.jpg" class="card-img-top"
+                                        alt="Gambar 2" style="width: 150px; height: 100px; border-radius: 5px;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="card-body border-0 isi-card-news"
+                                    style="font-size: 14px; border: 1px solid white;">
+                                    Carnaval IMWORK, berjudul 'Menyusuri Masa Depan Bersama,' hadir untuk menggambarkan
+                                    kemajuan teknologi terbaru, memberikan wawasan praktis dalam aplikasi dunia nyata,
+                                    dan ...
+                                    <a class="button-link6 active text-danger" style="font-size: 15px;"
+                                        href="news page/news4.html">
+                                        Lihat
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card card5 border-0 shadow news-card3-dark">
+                        <div class="card-title ms-4 mt-3">
+                            <h6 class="date-news" style="font-size: 13px; font-family: 'PlusJakarta', sans-serif;">
+                                <span style="color: #979797;">Okt 12,
+                                    2023 </span> <span style="margin-left: 5px; margin-right: 5px; color: #979797;">
+                                    &#124; </span><a href="news page/news3.html"
+                                    style="text-decoration: none; color: #febb4b;"> BARU</a>
+                            </h6>
+                            <a href="news page/news3.html" class="judul-card-news">
+                                <h5>Memanfaatkan Peluang Emas di Dunia IT: CEO IDMETAFORA, M Abdurrohman Alhafidz Ungkap
+                                    Tips Karir IT</h5>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body card-img-news border-0">
+                                    <img src="../img/profil/m-abdurrohman-alhafidz 10upc.jpg" class="card-img-top"
+                                        alt="Gambar 2" style="width: 150px; height: 100px; border-radius: 5px;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="card-body border-0 isi-card-news"
+                                    style="font-size: 14px; border: 1px solid white;">
+                                    Dalam era digital, peluang di dunia Teknologi Informasi semakin melimpah. Dengan
+                                    inovasi terbaru setiap hari, saat ini merupakan waktu yang tepat untuk membahas dan
+                                    memanfaatkan ...
+                                    <a class="button-link6 active text-danger" style="font-size: 15px;"
+                                        href="news page/news3.html">
+                                        Lihat
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card card5 border-0 shadow news-card4-dark">
+                        <div class="card-title ms-4 mt-3">
+                            <h6 class="date-news1" style="font-size: 13px; font-family: 'PlusJakarta', sans-serif;">
+                                <span style="color: #979797;">Apr 26,
+                                    2023 </span> <span style="margin-left: 5px; margin-right: 5px; color: #979797;">
+                                    &#124; </span><a href="news page/news2.html"
+                                    style="text-decoration: none; color: #828282;"> ARSIP</a>
+                            </h6>
+                            <a href="news page/news2.html" class="judul-card-news">
+                                <h5> M Abdurrohman Alhafidz, Pengusaha Muda Bisnis Software yang Menginspirasi Anak Muda
+                                    untuk Berani Bermimpi dan Berjuang</h5>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body card-img-news border-0">
+                                    <img src="../img/profil/m-abdurrohman-alhafidz 4aup.png" class="card-img-top"
+                                        alt="Gambar 2" style="width: 150px; height: 100px; border-radius: 5px;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="card-body border-0 isi-card-news"
+                                    style="font-size: 14px; border: 1px solid white;">
+                                    Pengusaha muda seringkali menjadi sumber inspirasi bagi banyak anak muda yang
+                                    memiliki impian untuk meraih kesuksesan di bidang bisnis. Keberhasilan mereka dalam
+                                    membangun ...
+                                    <a class="button-link6 active text-danger" style="font-size: 15px;"
+                                        href="news page/news2.html">
+                                        Lihat
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card card5 border-0 shadow news-card3-dark">
+                        <div class="card-title ms-4 mt-3">
+                            <h6 class="date-news1" style="font-size: 13px; font-family: 'PlusJakarta', sans-serif;">
+                                <span style="color: #979797;">Apr 26,
+                                    2023 </span> <span style="margin-left: 5px; margin-right: 5px; color: #979797;">
+                                    &#124; </span><a href="news page/news1.html"
+                                    style="text-decoration: none; color: #828282;"> ARSIP</a>
+                            </h6>
+                            <a href="news page/news1.html" class="judul-card-news">
+                                <h5>Perjalanan Sukses Bisnis M. Abdurrohman Alhafidz: Memulai Jasa Layanan ERP Sejak
+                                    Usia Muda
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body card-img-news border-0">
+                                    <img src="../img/profil/m-abdurrohman-alhafidz 5upc.jpg" class="card-img-top"
+                                        alt="Gambar 2" style="width: 150px; height: 100px; border-radius: 5px;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="card-body border-0 isi-card-news"
+                                    style="font-size: 14px; border: 1px solid white;">
+                                    Memulai bisnis di usia muda adalah keputusan sulit dan impian banyak orang. Namun,
+                                    menjadi pengusaha muda tidaklah mudah. Memulai bisnis di usia muda membutuhkan
+                                    dedikasi ...
+                                    <a class="button-link6 active text-danger"
+                                        style="font-size: 15px; text-align: right;" href="news page/news1.html">
+                                        Lihat
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Berita End-->
+
+    <!--Footer-->
+    <footer class="footer-section mt-4" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div class="cta-text" style="width: 80%;">
+                                <h4>Find us</h4>
+                                <span>Sleman Regency, Special Region of Yogyakarta 55581</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+62 896 6423 0232</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>Email: info at mahafidz.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="../index.html"><img src="../img/mahafidz.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>MAHAFIDZ is an IT Solution Company, our main business is in web
+                                    design & development. We also support our clients in digital
+                                    marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) © 2014-2023</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Our Social Media</span>
+                                <a href="#"> <img src="../img/logo/LinkedIn.png" alt="LinkedIn" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                                <a href="#"><img src="../img/logo/Facebook.png" alt="Facebook" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                                <a href="#"><img src="../img/logo/instagram.png" alt="Instagram" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                                <a href="#"> <img src="../img/logo/twitter.png" alt="Twitter" class="fluid-custom"
+                                        style="max-width: 30px" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Website Services</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <ul>
+                                    <li><a href="#">Website Developement</a></li>
+                                    <li><a href="portofolio.html">Portfolio Website Development</a></li>
+                                    <li><a href="pricelist.html"> Price List Website Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-heading">
+                                <h3>Product ERP</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <ul>
+                                    <li><a href="erpsystem.html">Enterprise Resources Planning</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Group Company</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <img src="../img/logo/logo-metafora-corp.png" alt="metafora-corp"
+                                    style="max-width: 50%;"> </br>
+                                <img src="../img/logo/metafora-land-long-logo-with-description-png.png"
+                                    alt="metafora-land"
+                                    style="max-width: 60%; margin-top: 10px; margin-left: -4px !important;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <p style="margin-top: 20px; text-align: center; color: white;">
+                    &copy; Copyright 2014-2023 <a href="#"
+                        style="color: white; text-decoration: none;"><strong>MAHAFIDZ</strong></a>
+                    All
+                    Rights Reversed
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Script JS-->
+    <script src="../js/mode.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/time.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tambahkan Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to(".down", { duration: 2, delay: 0.5, text: "" });
+        gsap.to(".up", {
+            duration: 4,
+            delay: 2,
+            text: "ERP Developer Company based in Jakarta, Indonesia.",
+        });
+        gsap.from("#mahafidz", { duration: 1, x: -50, opacity: 0, ease: "back" });
+        gsap.from("#header", { duration: 1, x: -50, opacity: 0, ease: "back" });
+        gsap.from(".button-link2", {
+            duration: 1,
+            x: -50,
+            opacity: 0,
+            ease: "back",
+            stagger: 0.2,
+        });
+    </script>
+
+    <script>
+        function prevSlide() {
+            $("#popularCarousel").carousel("prev");
+        }
+
+        function nextSlide() {
+            $("#popularCarousel").carousel("next");
+        }
+    </script>
+</body>
+
+</html>

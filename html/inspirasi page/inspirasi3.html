@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspirasi 3 - Mahafidz</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../img/logo/idmetafora_logo.jpeg" />
+
+  <!--Link Style CSS-->
+  <link rel="stylesheet" href="../../asset/style.css" />
+  <link rel="stylesheet" href="../../asset/news.css" />
+  <link rel="stylesheet" href="../../asset/mode.css" />
+
+  <!-- Link AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--Link Via CDN With Boostrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!--Link Via CDN With Boostrap Icons CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+  <!--Link Via CDN Font-->
+  <link href="https://www.dafontfree.net/embed/bnlhbGEtcmVndWxhciZkYXRhLzQ2L24vNjEwODMvbnlhbGEudHRm" rel="stylesheet"
+    type="text/css" />
+
+  <!--Link Via CDN Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar bg-transparent sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img id="mahafidz" class="dark-mode-img" src="../../img/mahafidz_dark.png" alt="Bootstrap" width="170"
+          height="30" />
+      </a>
+      <div class="clock-container">
+        <div class="clock"></div>
+        <div class="date" id="formattedDate"></div>
+      </div>
+      <span class="button-divider"></span>
+      <button style=" border: none; background: none;" onclick="toggleDarkMode()">
+        <span id="darkModeIcon" class="bi bi-sun-fill animate-icon" style="color: orange; font-size: 20px;"></span>
+      </button>
+      <span class="button-divider"></span>
+      <div class="icon-container">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span>
+            <i class="bi bi-list text-danger" style="font-size: 27px; margin-left: -10px;"></i>
+            <i class="bi bi-box-arrow-right text-danger" style="font-size: 27px; margin-left: -32px;"></i>
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #4a4a4a;">
+          <img id="mahafidz" src="../../img/mahafidz.png" alt="Offcanvas Logo" width="185" height="30" />
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="mahafidz" class="offcanvas-body">
+          <ul class="navbar-nav">
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 active fs-4" aria-current="page" href="../../index.html"><i
+                  class="bi bi-house-fill me-2"></i>
+                Home</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../profil.html"><i class="bi bi-person-fill me-2"></i> Profil</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../portofolio.html"><i class="bi bi-clipboard-data-fill me-2"></i>
+                Portofolio</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../news.html"><i class="bi bi-newspaper me-2"></i> News</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../inspirasi.html"><i class="bi bi-lightbulb-fill me-2"></i>
+                Inspirasi</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../video.html"><i class="bi bi-youtube me-2"></i> Video</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../erpsystem.html"><i class="bi bi-pc-display me-2"></i> ERP
+                System</a>
+            </li>
+            <br />
+            <li class="nav-item1">
+              <a class="button-link2 fs-4" href="../client.html"><i class="bi bi-people-fill me-2"></i> Client</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!---Tabs-->
+  <div class="tabs bg-transparent" style="margin-top: -5px;">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="button-link2 active text-danger" aria-current="page" href="../../index.html"
+          style="margin-right: 80px;"><i class="bi bi-house-fill"></i> Home</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../profil.html"><i class="bi bi-person-fill"></i> Profile</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../portofolio.html"><i class="bi bi-clipboard-data-fill"></i>
+          Portofolio</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../news.html"><i class="bi bi-newspaper"></i> News</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../inspirasi.html"><i class="bi bi-lightbulb-fill"></i>
+          Inspirasi</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../video.html"><i class="bi bi-youtube"></i> Video</a>
+      </li>
+      <li class="nav-item" style="margin-right: 70px;">
+        <a class="button-link2 active text-danger" href="../erpsystem.html"><i class="bi bi-pc-display"></i> ERP
+          System</a>
+      </li>
+      <li class="nav-item">
+        <a class="button-link2 active text-danger" href="../client.html"><i class="bi bi-people-fill"></i> Client</a>
+      </li>
+    </ul>
+  </div>
+  <!---Tabs End-->
+
+  <!--- Section -->
+  <section id="profile">
+    <div class="container" style="background-color: transparent; border-radius: 4px">
+      <div class="row mt-5">
+        <div class="col-md-8 mx-auto">
+          <h5 class="fs-1">
+            <strong>Kisah Abdurrohman Alhafidz Bangun Aplikasi Bisnis Idmetafora</strong>
+          </h5>
+          <div class="d-flex align-items-center">
+            <img src="../../img/profil/m-abdurrohman-alhafidz 1c.jpg" alt="M_Abdurrohman_Alhafidz"
+              class="shadow rounded-circle mt-2 me-2" style="max-width: 37px" />
+            <div class="author-info">
+              <a href="profil.html" class="" style="text-decoration: none; color: grey; font-weight: bold">Admin</a>
+              <span class="ms-2" style="font-size: 12px; color: grey">09 NOVEMBER 2023</span>
+            </div>
+            <div class="ms-4">
+              <a href="https://www.facebook.com" style="text-decoration: none">
+                <img src="../../img/logo/Facebook.png" alt="Gambar 1" class="fluid-custom"
+                  style="max-width: 20px; margin-right: 5px" />
+              </a>
+              <a href="https://www.twitter.com" style="text-decoration: none">
+                <img src="../../img/logo/twitter.png" alt="Gambar 2" class="fluid-custom"
+                  style="max-width: 20px; margin-right: 5px" />
+              </a>
+              <a href="https://www.instagram.com" style="text-decoration: none">
+                <img src="../../img/logo/instagram.png" alt="Gambar 3" class="fluid-custom"
+                  style="max-width: 20px; margin-right: 5px" />
+              </a>
+              <a href="https://www.linkedin.com" style="text-decoration: none">
+                <img src="../../img/logo/LinkedIn.png" alt="Gambar 4" class="fluid-custom" style="max-width: 20px" />
+              </a>
+            </div>
+          </div>
+
+          <img src="../../img/profil/m-abdurrohman-alhafidz 6ar.png" alt="M_Abdurrohman_Alhafidz" class="mt-4 img-brdr" style="
+          max-width: 100%; border: 2px solid #adadad;" />
+          <p class="mt-2" style="text-align: justify">
+            Aplikasi bisnis menjadi salah satu hal penting dalam menunjang
+            bisnis di tengah berkembangnya teknologi informasi digital.
+          </p>
+          <p style="text-align: justify">
+            Aplikasi ini bisa membantu para pengusaha, terutama yang baru
+            merintis untuk memperkenal produk dan jasanya via online agar
+            lebih dikenal masyarakat.
+          </p>
+          <p style="text-align: justify">
+            Hal inilah yang membuat PT Metafora Indonesia Teknologi
+            (IDMETAFORA) sebagai perusahaan yang menawarkan aplikasi bisnis
+            terintegrasi untuk perusahaan terus bertransformasi.
+          </p>
+          <p style="text-align: justify">
+            Abdurrohman Alhafidz selaku CEO dari PT Metafora Indonesia
+            Teknologi (IDMETAFORA) mengatakan dia mendirikan perusahaannya dan
+            mulai mengembangkan layanan pembuatan aplikasi bisnis terintegrasi
+            sejak 19 April 2014.
+          </p>
+          <p style="text-align: justify">
+            Perusahaan yang berlokasi di kota Yogyakarta dan Jakarta ini,
+            katanya, ditujukan untuk membantu mereka merencanakan
+            langkah-langkahnya, baik dalam pembuatan proses bisnis yang
+            efektif, maupun dalam merencanakan pengembangan aplikasi bisnis
+            yang terintegrasi.
+          </p>
+
+          <p style="text-align: justify">
+            Tujuannya, agar membuat rencana proyek lebih terprediksi dalam
+            pengerjaan proyek.
+          </p>
+
+          <p style="text-align: justify">
+            Tercatat, saat ini mereka telah mengerjakan lebih dari 250 proyek
+            dengan pelanggan baik itu dari indonesia maupun dari luar negeri,
+            merancang.
+          </p>
+
+          <p style="text-align: justify">
+            "Kuncinya adalah, dalam melakukan pelayanan, IDMETAFORA selalu
+            menjalin komunikasi yang intensif dengan pelanggannya melalui
+            diskusi untuk saling memberikan kontribusi. Dengan demikian, hasil
+            pekerjaan yang diharapkan dari klien dapat dipahami dan dibuatkan
+            oleh IDMETAFORA," paparnya.
+          </p>
+
+          <p style="text-align: justify">
+            Selain itu, lanjutnya, inovasi juga merupakan kunci penting dalam
+            bisnis yang berkaitan dengan teknologi.
+          </p>
+
+          <p style="text-align: justify">
+            Alumni Master of Business Administration dari Fakultas Ekonomika
+            dan Bisnis di Universitas Gadjah Mada ini fokus pada bisnis
+            Software ERP Indonesia, dan juga ekspansi ke Internet Of Thing
+            (IOT).
+          </p>
+
+          <p style="text-align: justify">
+            Menurut pria asal Jogjakarta itu, di era Industri 4.0 yang sedang
+            marak saat ini, IoT sejatinya telah muncul sebagai salah satu
+            teknologi yang akan menjadi faktor terpenting dalam mensukseskan
+            gerakan Revolusi Industri 4.0.
+          </p>
+
+          <p style="text-align: justify">
+            IoT sendiri merupakan teknologi yang memungkinkan berbagai
+            perangkat untuk terhubung dan bertukar data melalui internet.
+          </p>
+
+          <p style="text-align: justify">
+            Hafidz juga mengatakan perusahaannya berencana IPO dalam waktu
+            dekat.
+          </p>
+
+          <p style="text-align: justify">
+            Dia sendiri mengaku sudah banyak inovasi yang ingin dilakukan
+            Hafidz, namun ia memiliki keterbatasan dalam menjalankan bisnis
+            secara mandiri. Hal inilah yang membuatnya berencana IPO.
+          </p>
+
+          <p style="text-align: justify">
+            Hafidz yakin jika Hafidz dan timnya memiliki rekanan dan modal
+            lebih, pekerjaan yang biasanya diselesaikan dalam waktu 3 tahun
+            dapat diselesaikan hanya dalam waktu 6 bulan.
+          </p>
+
+          <p style="text-align: justify">
+            Hafidz mengungkapkan sejak awal IDMETAFORA ingin berkembang
+            menjadi perusahaan global yang produk dan layanannya mampu menjadi
+            solusi utama bagi perusahaan klien yang membutuhkan aplikasi
+            bisnis terintegrasi.
+          </p>
+
+          <p style="text-align: justify">
+            Diapun ingin melakukannya secara sistematis dan berkelanjutan
+            serta melibatkan lebih banyak orang dan ini tentu butuh waktu yang
+            cukup lama dan modal yang besar.
+          </p>
+
+          <p style="text-align: justify">
+            “Rencana kita kedepannya, nanti kita akan go public. Semuanya
+            sudah kami persiapkan cukup lama sebelum pandemi. Jadi kalau
+            bertanya-tanya apa rencana bisnis kami selanjutnya, insyaAllah
+            kedepan kami akan melakukan IPO.” tambahnya.
+          </p>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="row mt-5">
+        <div class="col-md-8 mx-auto">
+          <div class="related-post">
+            <h4>Related Post</h4>
+            <div class="hr-line"></div>
+          </div>
+          <div id="news-slider" class="owl-carousel">
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="../../img/profil/m-abdurrohman-alhafidz 12ab.jpg" alt="">
+              </div>
+              <div class="post-content">
+                <h3 class="post-title">
+                  <a href="inspirasi1.html">M Abdurrohman Alhafidz: Perintis IDMETAFORA, Aplikasi Bisnis
+                    Terintegrasi</a>
+                </h3>
+                <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                    style="color: #979797; font-size: 14px;">Nov 8, 2023 </span> <span
+                    style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a
+                    href="inspirasi1.html" style="text-decoration: none; color: #febb4b; font-size: 14px;">
+                    BARU</a>
+              </div>
+            </div>
+
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="../../img/profil/m-abdurrohman-alhafidz 8ab.png" alt="">
+              </div>
+              <div class="post-content">
+                <h3 class="post-title">
+                  <a href="inspirasi2.html">M Abdurrohman Alhafidz, Merintis Bisnis Jasa Layanan ERP Sejak Usia Muda</a>
+                </h3>
+                <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                    style="color: #979797; font-size: 14px;">Apr 26, 2023 </span> <span
+                    style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a
+                    href="inspirasi2.html" style="text-decoration: none; color: #828282; font-size: 14px;">
+                    ARSIP</a>
+              </div>
+            </div>
+
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="../../img/profil/m-abdurrohman-alhafidz 2ab .png" alt="">
+              </div>
+              <div class="post-content">
+                <h3 class="post-title">
+                  <a href="inspirasi4.html">Keren! M. Abdurrohman Alhafidz Sukses Jadi CEO di Usia Muda</a>
+                </h3>
+                <span class="mr-2" style="font-family: 'PlusJakarta', sans-serif;"> <span
+                    style="color: #979797; font-size: 14px;">Mar 18, 2019 </span> <span
+                    style="margin-left: 5px; margin-right: 5px; color: #979797;"> &#124; </span><a
+                    href="inspirasi4.html" style="text-decoration: none; color: #828282; font-size: 14px;">
+                    ARSIP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CArousel END-->
+
+    </div>
+  </section>
+  <!---Section End-->
+
+  <!--Footer-->
+  <footer class="footer-section mt-4" data-aos="fade-up">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div class="cta-text" style="width: 80%;">
+                <h4>Find us</h4>
+                <span>Sleman Regency, Special Region of Yogyakarta 55581</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-telephone-fill"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+62 896 6423 0232</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="bi bi-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>Email: info at mahafidz.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="../../index.html"><img src="../../img/mahafidz.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>MAHAFIDZ is an IT Solution Company, our main business is in web
+                  design & development. We also support our clients in digital
+                  marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) © 2014-2023</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Our Social Media</span>
+                <a href="#"> <img src="../../img/logo/LinkedIn.png" alt="LinkedIn" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/Facebook.png" alt="Facebook" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/instagram.png" alt="Instagram" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+                <a href="#"><img src="../../img/logo/twitter.png" alt="Twitter" class="fluid-custom"
+                    style="max-width: 30px" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Website Services</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="#">Website Developement</a></li>
+                  <li><a href="../portofolio.html">Portfolio Website Development</a></li>
+                  <li><a href="../pricelist.html"> Price List Website Development</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-heading">
+                <h3>Product ERP</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <ul>
+                  <li><a href="../erpsystem.html">Enterprise Resources Planning</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Group Company</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <img src="../../img/logo/logo-metafora-corp.png" alt="metafora-corp" style="max-width: 50%;"> </br>
+                <img src="../../img/logo/metafora-land-long-logo-with-description-png.png" alt="metafora-land"
+                  style="max-width: 60%; margin-top: 10px; margin-left: -4px !important;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <p style="margin-top: 20px; text-align: center; color: white;">
+          &copy; Copyright 2014-2023 <a href="../../index.html"
+            style="color: white; text-decoration: none;"><strong>MAHAFIDZ</strong></a>
+          All
+          Rights Reversed
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <style>
+    @keyframes slideAnimation {
+      0% {
+        transform: translateY(-50%) scale(1);
+      }
+
+      50% {
+        transform: translateY(-50%) scale(1.2);
+      }
+
+      100% {
+        transform: translateY(-50%) scale(1);
+      }
+    }
+
+    .owl-carousel .owl-nav button {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      transition: background 0.5s ease 0s;
+      position: absolute;
+      bottom: 100%;
+      transform: translateY(-50%);
+      margin-bottom: 20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: 15px;
+      font-size: 50px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      left: 15px;
+      font-size: 50px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .owl-carousel .owl-nav button.animated {
+      animation: slideAnimation 0.5s ease;
+    }
+  </style>
+
+  <!--Script JS-->
+  <script src="../../js/mode.js"></script>
+  <script src="../../js/navbar.js"></script>
+  <script src="../../js/time.js"></script>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Tambahkan Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script Owl Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#news-slider").owlCarousel({
+        items: 3,
+        nav: true,
+        dots: true,
+        loop: true, // Tambahkan ini
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          }
+        }
+      });
+      $(".owl-nav button").on("click", function () {
+        $(this).addClass("animated");
+        setTimeout(function () {
+          $(".owl-nav button").removeClass("animated");
+        }, 500);
+      });
+    });
+  </script>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function prevSlide() {
+      $("#popularCarousel").carousel("prev");
+    }
+
+    function nextSlide() {
+      $("#popularCarousel").carousel("next");
+    }
+  </script>
+</body>
+
+</html>
