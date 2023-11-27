@@ -243,6 +243,10 @@ body {
     font-weight: 500;
   }
 
+  .td {
+    margin-left: 23px !important;
+  }
+  
   .owl-dots {
     text-align: center;
     position: absolute;
